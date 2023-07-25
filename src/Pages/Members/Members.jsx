@@ -31,11 +31,11 @@ const About = () => {
                                 <br></br>
                                 <h2 className='member0-about'>hemlos,this is karan agrawal here the director and founder of halocon </h2>
                                 <div class="members-form__icons">
-                                    <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                                    <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                                    <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                                    <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                                    <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                                    <img class="members-form__icon" src={discordlogo} alt=''/>
+                                    <img class="members-form__icon" src={youtubelogo} alt=''/>
+                                    <img class="members-form__icon" src={githublogo} alt=''/>
+                                    <img class="members-form__icon" src={twitterlogo} alt=''/>
+                                    <img class="members-form__icon" src={instagramlogo} alt=''/>
                                     
                                 </div>
                             </div>
@@ -50,16 +50,16 @@ const About = () => {
                     
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
@@ -70,41 +70,41 @@ const About = () => {
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
@@ -115,61 +115,61 @@ const About = () => {
                     
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>
                     <div className="member1" >
                         <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                            <img className="member1-ellipse-img" alt="" src={userimg}/>
                         </div>
                         <p className="director">Director</p>
                         <p className="members-name-text">Karan Agrawal</p>
                         <div class="members-form__icons">
-                            <a href=''><img class="members-form__icon" src={discordlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={youtubelogo}/></a>
-                            <a href=''><img class="members-form__icon" src={githublogo}/></a>
-                            <a href=''><img class="members-form__icon" src={twitterlogo}/></a>
-                            <a href=''><img class="members-form__icon" src={instagramlogo}/></a>
+                            <img class="members-form__icon" src={discordlogo} alt=''/>
+                            <img class="members-form__icon" src={youtubelogo} alt=''/>
+                            <img class="members-form__icon" src={githublogo} alt=''/>
+                            <img class="members-form__icon" src={twitterlogo} alt=''/>
+                            <img class="members-form__icon" src={instagramlogo} alt=''/>
                             
                         </div>
                     </div>

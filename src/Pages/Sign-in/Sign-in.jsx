@@ -20,6 +20,11 @@ const Signin = () => {
             <div class="signin-switch__circle"></div>
             <div class="signin-switch__circle signin-switch__circle--t"></div>
             <h2 class="signin-form_title signin-title">Sign in to Website</h2>
+            
+            
+            
+            <span class="signin-form__span1">Our Socials:</span>
+
             <div class="signin-form__icons">
               <a href='https://discord.com'><img class="signin-form__icon" src={discordlogo} alt=""/></a>
               <a href='https://discord.com'><img class="signin-form__icon" src={youtubelogo} alt=""/></a>
@@ -28,12 +33,15 @@ const Signin = () => {
               <a href='https://discord.com'><img class="signin-form__icon" src={instagramlogo} alt=""/></a>
 
             </div>
-            <span class="signin-form__span">or use your email account</span>
+            
+            <span class="signin-form__span">Sign up with email</span>
+
+
             <input class="signin-form__input" type="text" placeholder="Email" />
             <input class="signin-form__input" type="password" placeholder="Password" />
             <a href="Forgotpass" class="signin-form__link">Forgot your password?</a>
             <a href='Signin'><button class="signin-form__button signin-button signin-submit" onClick={() => { navigate("/signin2"); }}>SIGN IN</button></a>
-            <a href="Forgotpass" class="signin-form__login">Sign in with</a>
+            <a href="Forgotpass" class="signin-form__login">Sign in using</a>
             <div class="signin-form__icons">
               <a href='https://discord.com'><img class="signin-form__icon" src={googleloginlogo} alt=""/></a>
               <a href='https://discord.com'><img class="signin-form__icon" src={discordloginlogo} alt=""/></a>

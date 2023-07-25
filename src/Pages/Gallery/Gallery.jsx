@@ -6,7 +6,7 @@ function ImageSlider() {
 
     const images = productData.map((item) => (
         <div className="card">
-            <img className="gallery-product--image" src={item.imageurl} alt="product image" />
+            <img className="gallery-product--image" src={item.imageurl} alt="product" />
         </div>
     ));
 

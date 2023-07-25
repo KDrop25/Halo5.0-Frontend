@@ -1,6 +1,78 @@
 
 
 /* Generic */
+.signup-success-main {
+    display: flex;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  
+    justify-content: space-around;
+  
+  }
+  
+  /**/
+  .signup-success-main-core {
+    position: relative;
+  
+  
+    width: 1000px;
+    min-width: 1000px;
+    min-height: 600px;
+    height: 600px;
+    padding: 25px;
+    background-color: var(--color-bg);
+    box-shadow: 10px 10px 10px var(--glow), -10px -10px 10px var(--glow);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 1200px) {
+    .signup-success-main-core {
+      transform: scale(0.7);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .signup-success-main-core {
+      transform: scale(0.6);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .signup-success-main-core {
+      transform: scale(0.5);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .signup-success-main-core {
+      transform: scale(0.4);
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .signup-success-main-core {
+      transform: scale(0.3);
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .signup-success-main-core {
+      transform: scale(0.28);
+    }
+  }
+  
+  @media (max-width: 330px) {
+    .signup-success-main-core {
+      transform: scale(0.25);
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .signup-success-main-core {
+      transform: scale(0.20);
+    }
+  }
 .valid{
   color: white;
 }
@@ -136,11 +208,17 @@ box-shadow: inset 2px 2px 4px var(--glow), inset -2px -2px 4px var(--glow);
 box-shadow: inset 4px 4px 4px var(--glow-2), inset -4px -4px 4px var(--glow-2);
 }
 .signup-form__span {
-margin-top: 30px;
+margin-top: 15px;
 margin-bottom: 12px;
 font-family: var(--font-family-montserrat);
 color: white;
 }
+.signup-form__span1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: var(--font-family-montserrat);
+  color: white;
+  }
 .signup-form__link {
 color: white;
 font-size: 15px;
@@ -273,6 +351,77 @@ transition: 0.25s;
   border: none;
   outline: none;
 }
+.signup-success-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000px;
+    padding: 50px;
+    z-index: 200;
+    transition: 1.25s;
+    background-color: var(--color-bg);
+    
+    overflow: hidden;
+    
+  }
+  
+  .signup-success-switch__circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--button);
+    box-shadow: inset 8px 8px 12px var(--glow-2), inset -8px -8px 12px var(--glow-2);
+    bottom: -60%;
+    left: -20%;
+    z-index: -1;
+    transition: 1.25s;
+  }
+  
+  .signup-success-switch__circle--t {
+    top: -55%;
+    left: 60%;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .signup-success-switch__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    padding: 50px 55px;
+    transition: 1.25s;
+  }
+  
+  .signup-success-switch__button {
+    cursor: pointer;
+    box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
+  }
+  
+  .signup-success-switch__button:hover {
+    box-shadow: 6px 6px 10px var(--glow), -6px -6px 10px var(--glow);
+    transform: scale(0.985);
+    transition: 0.25s;
+  }
+  
+  .signup-success-switch__button:active,
+  .switch__button:focus {
+    box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
+    transform: scale(0.97);
+    transition: 0.25s;
+  }
+  
+  .signup-success-switch__description {
+    color: white;
+  }
 .signup-button:hover {
   box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
   transform: scale(0.985);
