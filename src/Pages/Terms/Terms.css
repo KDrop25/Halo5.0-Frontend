@@ -1,0 +1,52 @@
+
+    
+
+.terms-heading{
+    display: flex;
+}
+.terms-heading p{
+    font-family: var(--font-family-montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+    
+}
+.terms-info{
+    display: flex;
+}
+
+.terms-info p{
+    font-family: var(--font-family-montserrat);
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    margin-right: 5rem;
+    
+}
+
+
+.main-terms{
+    padding: 5rem 5rem;
+    
+}
+
+.terms-bg-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+
+.terms-bg-halolegion-logo {
+    width: 100%;
+    height: fit-content;
+    mix-blend-mode: overlay;
+    position:absolute
+}

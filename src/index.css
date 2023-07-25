@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+:root {
+  --font-family-manrope: 'Manrope', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-source: 'Source Sans Pro', sans-serif;
+  --font-family-redhatdisplay: 'Red Hat Display', sans-serif;
+  --font-family-space: 'Space Grotesk', sans-serif;
+
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-menu: #071427;
+  --color-footer: #031B34;
+  
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+
+  --font-source-sans-pro: "Source Sans Pro";
+  --font-red-hat-display: "Red Hat Display";
+  --font-space-grotesk: "Space Grotesk";
+  --font-montserrat-alternates: "Montserrat Alternates";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-6xl: 25px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --font-size-15xl: 34px;
+  --font-size-11xl: 30px;
+  --font-size-61xl: 80px;
+  --font-size-41xl: 60px;
+  --font-size-21xl: 40px;
+  --font-size-17xl: 36px;
+
+  /* Colors */
+  --color-gray-100: #12131e;
+  --events-cards: rgba(30, 30, 44, 0.7);
+  --color-gray-200: rgba(18, 19, 30, 0.9);
+  --color-gray-300: rgba(133, 132, 135, 0.35);
+  --color-white: #fff;
+  --color-midnightblue: #442077;
+  
+  --color-dimgray-100: #4e4e59;
+  --color-dimgray-200: #6a6a79;
+  --glow: rgba(78, 78, 89, 0.5);
+  --gg: #888fff;
+  --color-transparent: #ffffff00;
+  --color-footer: #12131E;
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-131xl: 150px;
+  --gap-11xl: 30px;
+  --gap-41xl: 60px;
+  --gap-21xl: 40px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+
+  /* border radiuses */
+  --br-8xs: 5px;
+  /* font sizes */
+  --font-size-5xl: 1.5rem;
+  --font-size-21xl: 2.5rem;
+  --font-size-17xl: 2.25rem;
+  --font-size-xl: 1.25rem;
+  --font-size-6xl: 1.56rem;
+
+  /* Colors */
+  
+  --button-glow: rgba(133, 132, 135, 0.35);
+  --member-plaque: rgba(18, 19, 30, 0.918);
+  --color-gray-100: rgba(255, 255, 255, 0.75);
+  --gg: #888fff;
+  --glow-2: #fff;
+  --color-dimgray-100: #4e4e59;
+  --glow: rgba(78, 78, 89, 0.5);
+  --button: #442077;
+
+  /* Gaps */
+  --gap-xl: 1.25rem;
+
+  /* Paddings */
+  --padding-11xl: 1.88rem;
+
+  /* border radiuses */
+  --br-3xs: 10px;
+  --br-31xl: 50px;
+  --br-8xs: 5px;
+}
+
+
+
+

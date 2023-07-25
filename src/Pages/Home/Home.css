@@ -1,0 +1,186 @@
+.hero-content-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+
+.halolegion-logo {
+    width: 100%;
+    mix-blend-mode: overlay;
+    position:absolute;
+    top: -50px;
+    
+
+}
+
+
+.ellipse-img{
+    height: 330px;
+    width: 330px;
+    position:absolute
+}
+
+.halocon-text{
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
+    font-size: 80px;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+.event-button{
+    border-radius: 5px;
+    background-color: var(--color-midnightblue);
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border:0px;
+    font-size: medium;
+    font-weight: 600;
+    font-family: var(--font-family-montserrat);
+    border:0px;
+    text-align: center;
+}
+.learn-button {
+    border-radius: 5px;
+    background-color: var(--color-transparent);
+    font-family: var(--font-family-montserrat);
+    border-color: #858487;
+    border-style: solid;
+    width: 190px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    height: 50px;
+    color: #FFFFFF;
+}
+.year-text{
+    text-align: center;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+
+
+    
+}
+.lorem-ipsum-dolor {
+    color: var(--color-dimgray-100);
+    display: inline-block;
+    width: 546px;
+    height: 56px;
+    font-family: var(--font-source-sans-pro);
+    text-align: center;
+    
+    
+}
+
+.hero-content-text{
+    position: relative;
+    padding-top: 100px;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+    
+}
+
+
+.main{
+    align-items: center;
+    padding: 3rem 0;
+}
+    
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    padding-top: 8rem;
+    padding-bottom:2rem;
+
+    
+}
+
+.info-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+
+
+
+
+.learn-button:hover{
+    text-shadow: 0px 0px 10px var(--glow-2);
+}
+.learn-button:active, .learn-button:focus {
+  box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
+  transform: scale(0.97);
+  transition: 0.25s;
+}
+
+
+.event-button:hover{
+    text-shadow: 0px 0px 10px var(--glow-2);
+}
+.event-button:active, .event-button:focus {
+  box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
+  transform: scale(0.97);
+  transition: 0.25s;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+    .main{
+        transform: scale(0.7);        
+    }
+    .halolegion-logo {
+        opacity: 20%;
+        mix-blend-mode: overlay;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .main{
+        padding-top: 8rem;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 380px) {
+    .main{
+        transform: scale(0.5);        
+    }
+    .halolegion-logo {
+        opacity: 20%;
+        mix-blend-mode: overlay;
+    }
+}
+

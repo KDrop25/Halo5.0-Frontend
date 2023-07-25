@@ -1,0 +1,30 @@
+.schedule-main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    
+
+}
+.schedule-img{
+    width: 70%;
+    height: 70%;
+    border-radius: 3rem;
+}
+
+.schedule-bg-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    
+  }
+  
+  
+  .schedule-bg-halolegion-logo {
+    width: 40%;
+    height: fit-content;
+    mix-blend-mode: overlay;
+    position:absolute;
+    padding-right:2rem;
+    padding-top: 2rem;
+  }
