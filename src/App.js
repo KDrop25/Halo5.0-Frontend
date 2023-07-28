@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, About, Members, Events, Schedule, Contact, Signin, Signup, Privacy, Terms, Recoil, Qurious, Encode, Regrecoil, Testing, Regqurious, Regencode, Gallery } from './Pages';
+import { Home, About, Members, Events, Schedule, Contact, Signin, Signup, Privacy, Terms, Recoil, Qurious, Encode, Regrecoil, Testing, Regqurious, Regencode, Gallery,Dashboard } from './Pages';
 import Layout from './components/Layout';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
@@ -29,6 +29,7 @@ const App = () => {
         <Route path='/reg-encode' element={<Regencode />} />
         <Route path='/encode' element={<Encode />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/test' element={<Testing />} />
       </Route>
     </Routes>

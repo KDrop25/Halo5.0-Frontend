@@ -8,15 +8,102 @@ import instagramlogo from '../../assets/icons8-instagram.svg'
 import googleloginlogo from '../../assets/icons8-google-login.png'
 import discordloginlogo from '../../assets/icons8-discord-login.png'
 import { useNavigate } from 'react-router-dom';
-
+import { useRef,useState,useEffect ,useContext} from 'react';
+import AuthContext from '../../context/AuthProvider';
+import axios from '../../api/axios';
+const LOGIN_URL = '/auth';
 
 const Signin = () => {
   const navigate = useNavigate();
+  const {setAuth} = useContext(AuthContext)
+  const userRef = useRef();
+  const errRef = useRef();
+
+  const [email,setEmail] = useState('');
+  const [pwd,setPwd] = useState('');
+  const [errMsg,setErrMsg] = useState('');
+  const [success,setSuccess] = useState(false);
+
+//  useEffect(()=> {
+//    userRef.current.focus();
+//  },[])
+  
+  useEffect(()=> {
+    setErrMsg('');
+  },[email,pwd])
+
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+      const response = await axios.post(LOGIN_URL,
+        JSON.stringify({email,pwd}),
+        {
+          headers:{'Content-Type':'application/json'},
+          withCredentials: true
+        }
+      );
+      const accessToken = response?.data?.accessToken;
+      const user = response?.data?.username;
+      const roles = response?.data?.roles;
+      setAuth({user,email,pwd,roles,accessToken})
+      setEmail('');
+      setPwd('');
+      setSuccess(true);
+    }catch(err){
+      if(!err?.response) {
+        setErrMsg('No Server Response')
+
+      }else if (err.response?.status===400){
+        if (err.response.data && err.response.data.message){
+          setErrMsg(err.response.data.message);
+        }else{
+          setErrMsg('Email & Password Cannot be Blank')
+        }
+      }else if (err.response?.status===401){
+        if (err.response.data && err.response.data.message){
+          setErrMsg(err.response.data.message);
+        }else{
+          setErrMsg('UnAuthorised')
+        }
+      }else{
+        setErrMsg('Login Failed')
+      }
+      errRef.current.focus();
+    }
+
+    
+
+  }
   return (
+    <>
+    {success? (
+      <div className='signin-success-main'>
+      <div class="signin-success-main-core">
+      
+          <div class="signin-success-switch" id="switch-cnt">
+  
+              <div class="signin-success-switch__circle"></div>
+              <div class="signin-success-switch__circle signin-success-switch__circle--t"></div>
+  
+              <div class="signin-success-switch__container " id="switch-c2">
+              <h2 class="signin-success-switch__title signin-success-title">Welcome!</h2>
+              <p class="signin-success-switch__description signin-success-description">Feel free to persistently log in to your account.</p>
+              <button class="signin-success-switch__button signin-success-button signin-success-switch-btn" onClick={() => { navigate("/dashboard"); }}>DASHBOARD</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    ):(
+    
     <div className='signin-main'>
       <div class="signin-main-core">
         <div class="signin-container signin-b-container" id="b-container">
-          <form class="signin-form" id="b-form" method="" action="">
+          <form class="signin-form" id="b-form" method="" action="" onSubmit={handleSubmit}>
             <div class="signin-switch__circle"></div>
             <div class="signin-switch__circle signin-switch__circle--t"></div>
             <h2 class="signin-form_title signin-title">Sign in to Website</h2>
@@ -37,17 +124,40 @@ const Signin = () => {
             <span class="signin-form__span">Sign up with email</span>
 
 
-            <input class="signin-form__input" type="text" placeholder="Email" />
-            <input class="signin-form__input" type="password" placeholder="Password" />
+            <input 
+            class="signin-form__input" 
+            type="text" 
+            id="email"
+            ref = {userRef}
+            autoComplete="off"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            placeholder="Email"
+            required 
+            />
+            
+            <input 
+            class="signin-form__input signin-password" 
+            type="password" 
+            id="password"
+            onChange={(e) => setPwd(e.target.value)}
+            value={pwd}
+            placeholder="Password" 
+            required
+            />
+
+            <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+            
+            
+            <button class="signin-form__button signin-button signin-submit">SIGN IN</button>
+            
             <a href="Forgotpass" class="signin-form__link">Forgot your password?</a>
-            <a href='Signin'><button class="signin-form__button signin-button signin-submit" onClick={() => { navigate("/signin2"); }}>SIGN IN</button></a>
+
             <a href="Forgotpass" class="signin-form__login">Sign in using</a>
+
             <div class="signin-form__icons">
               <a href='https://discord.com'><img class="signin-form__icon" src={googleloginlogo} alt=""/></a>
               <a href='https://discord.com'><img class="signin-form__icon" src={discordloginlogo} alt=""/></a>
-              
-              
-
             </div>
 
           </form>
@@ -65,6 +175,9 @@ const Signin = () => {
         </div>
       </div>
     </div>
+  )
+    }
+    </>
   )
 }
 

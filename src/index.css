@@ -67,6 +67,7 @@ body {
   --color-dimgray-100: #4e4e59;
   --color-dimgray-200: #6a6a79;
   --glow: rgba(78, 78, 89, 0.5);
+  --glow-white:#d6d6d6;
   --gg: #888fff;
   --color-transparent: #ffffff00;
   --color-footer: #12131E;
