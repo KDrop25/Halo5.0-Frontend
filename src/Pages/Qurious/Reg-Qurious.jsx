@@ -91,7 +91,7 @@ const Regqurious = () => {
         {Screen1 && (
           <div class="regqurious-container regqurious-b-container regqurious-is-gx1" id="b-container">
 
-            <form class="regqurious-form" id="b-form" method="" action="">
+            <form class="regqurious-form" id="b-form" method="" action="" onSubmit={next1}>
 
               <h2 class="regqurious-form_title regqurious-title">Qurious Registrations</h2>
               <span class="regqurious-form__span">or use your email account</span>
@@ -103,12 +103,12 @@ const Regqurious = () => {
 
               </div>
 
-              <input class="regqurious-form__input" id='first_name' type="text" placeholder="First Name" />
-              <input class="regqurious-form__input" id='last_name' type="text" placeholder="Last Name" />
-              <input class="regqurious-form__input" id='user_email' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Phone" />
+              <input class="regqurious-form__input" id='first_name' type="text" placeholder="First Name" required/>
+              <input class="regqurious-form__input" id='last_name' type="text" placeholder="Last Name" required/>
+              <input class="regqurious-form__input" id='user_email' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Phone" required/>
 
-              <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={next1}>NEXT</button>
+              <button class="regqurious-form__button regqurious-button regqurious-submit" >NEXT</button>
             </form>
             <div class="regqurious-switch__circle"></div>
             <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>
@@ -119,22 +119,22 @@ const Regqurious = () => {
         {Screen2 && (
           <div class="regqurious-container2 regqurious-b-container2 regqurious-is-gx2" id="b-container">
 
-            <form class="regqurious-form" id="b-form" method="" action="">
+            <form class="regqurious-form" id="b-form" method="" action=""onSubmit={next2}>
 
               <h2 class="regqurious-form_title regqurious-title">Page 2</h2>
 
 
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
 
               <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={back1}>BACK</button>
-              <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={next2}>NEXT</button>
+              <button class="regqurious-form__button regqurious-button regqurious-submit" >NEXT</button>
             </form>
             <div class="regqurious-switch__circle"></div>
             <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>
@@ -144,22 +144,22 @@ const Regqurious = () => {
         {Screen3 && (
           <div class="regqurious-container3 regqurious-b-container3 regqurious-is-gx3" id="b-container">
 
-            <form class="regqurious-form" id="b-form" method="" action="">
+            <form class="regqurious-form" id="b-form" method="" action="" onSubmit={() => { navigate("/qurious"); }}>
 
               <h2 class="regqurious-form_title regqurious-title">Page 3</h2>
 
 
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
 
               <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={back2}>BACK</button>
-              <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={() => { navigate("/qurious"); }}>SUBMIT</button>
+              <button class="regqurious-form__button regqurious-button regqurious-submit" >SUBMIT</button>
             </form>
             <div class="regqurious-switch__circle"></div>
             <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>

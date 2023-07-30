@@ -91,7 +91,7 @@ const Regencode = () => {
         {Screen1 && (
           <div class="regencode-container regencode-b-container regencode-is-gx1" id="b-container">
 
-            <form class="regencode-form" id="b-form" method="" action="">
+            <form class="regencode-form" id="b-form" method="" action="" onSubmit={next1}>
 
               <h2 class="regencode-form_title regencode-title">Encode Registrations</h2>
               <span class="regencode-form__span">or use your email account</span>
@@ -103,12 +103,12 @@ const Regencode = () => {
 
               </div>
 
-              <input class="regencode-form__input" id='first_name' type="text" placeholder="First Name" />
-              <input class="regencode-form__input" id='last_name' type="text" placeholder="Last Name" />
-              <input class="regencode-form__input" id='user_email' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Phone" />
+              <input class="regencode-form__input" id='first_name' type="text" placeholder="First Name" required/>
+              <input class="regencode-form__input" id='last_name' type="text" placeholder="Last Name" required/>
+              <input class="regencode-form__input" id='user_email' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Phone" required/>
 
-              <button class="regencode-form__button regencode-button regencode-submit" onClick={next1}>NEXT</button>
+              <button class="regencode-form__button regencode-button regencode-submit" >NEXT</button>
             </form>
             <div class="regencode-switch__circle"></div>
             <div class="regencode-switch__circle regencode-switch__circle--t"></div>
@@ -119,16 +119,16 @@ const Regencode = () => {
         {Screen2 && (
           <div class="regencode-container2 regencode-b-container2 regencode-is-gx2" id="b-container">
 
-            <form class="regencode-form" id="b-form" method="" action="">
+            <form class="regencode-form" id="b-form" method="" action="" onSubmit={next2}>
 
               <h2 class="regencode-form_title regencode-title">Page 2</h2>
 
 
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
@@ -144,22 +144,22 @@ const Regencode = () => {
         {Screen3 && (
           <div class="regencode-container3 regencode-b-container3 regencode-is-gx3" id="b-container">
 
-            <form class="regencode-form" id="b-form" method="" action="">
+            <form class="regencode-form" id="b-form" method="" action="" onSubmit={() => { navigate("/encode"); }}>
 
               <h2 class="regencode-form_title regencode-title">Page 3</h2>
 
 
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
 
               <button class="regencode-form__button regencode-button regencode-submit" onClick={back2}>BACK</button>
-              <button class="regencode-form__button regencode-button regencode-submit" onClick={() => { navigate("/encode"); }}>SUBMIT</button>
+              <button class="regencode-form__button regencode-button regencode-submit" >SUBMIT</button>
             </form>
             <div class="regencode-switch__circle"></div>
             <div class="regencode-switch__circle regencode-switch__circle--t"></div>

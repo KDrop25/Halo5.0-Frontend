@@ -509,8 +509,8 @@
 }
 
 .signin-form__span {
-  margin-top: 30px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   font-family: var(--font-family-montserrat);
   color: white;
 }
@@ -539,7 +539,15 @@
   line-height: 2;
   cursor: pointer;
 }
-
+.offscreen{
+  display: none;
+}
+.errmsg{
+  color: white;
+  font-size: 12px;
+  font-family: var(--font-family-montserrat);
+  
+}
 .signin-form__link:hover {
 
 
@@ -723,7 +731,7 @@
   width: 180px;
   height: 50px;
   border-radius: 25px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   font-family: var(--font-family-montserrat);

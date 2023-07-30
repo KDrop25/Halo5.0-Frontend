@@ -7,26 +7,28 @@ import twitterlogo from '../../assets/icons8-twitter.svg'
 import instagramlogo from '../../assets/icons8-instagram.svg'
 import googleloginlogo from '../../assets/icons8-google-login.png'
 import discordloginlogo from '../../assets/icons8-discord-login.png'
-import { useNavigate } from 'react-router-dom';
-import { useRef,useState,useEffect ,useContext} from 'react';
-import AuthContext from '../../context/AuthProvider';
+import { useNavigate ,useLocation} from 'react-router-dom';
+import { useRef,useState,useEffect } from 'react';
+import useAuth from '../../hooks/useAuth';
 import axios from '../../api/axios';
 const LOGIN_URL = '/auth';
 
 const Signin = () => {
+  const {setAuth} = useAuth();
   const navigate = useNavigate();
-  const {setAuth} = useContext(AuthContext)
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   const userRef = useRef();
   const errRef = useRef();
 
   const [email,setEmail] = useState('');
   const [pwd,setPwd] = useState('');
   const [errMsg,setErrMsg] = useState('');
-  const [success,setSuccess] = useState(false);
+  
 
-//  useEffect(()=> {
-//    userRef.current.focus();
-//  },[])
+  useEffect(()=> {
+    userRef.current.focus();
+  },[])
   
   useEffect(()=> {
     setErrMsg('');
@@ -38,6 +40,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
+
     try {
       const response = await axios.post(LOGIN_URL,
         JSON.stringify({email,pwd}),
@@ -46,14 +49,22 @@ const Signin = () => {
           withCredentials: true
         }
       );
-      const accessToken = response?.data?.accessToken;
+      const AccessToken = response?.data?.accessToken;
       const user = response?.data?.username;
-      const roles = response?.data?.roles;
-      setAuth({user,email,pwd,roles,accessToken})
+      const Roles = response?.data?.roles;
+      
+      setAuth({user,email,pwd,Roles,AccessToken});
+      
       setEmail('');
       setPwd('');
-      setSuccess(true);
-    }catch(err){
+      
+      navigate(from,{replace:true})
+      navigate("/home")
+
+    }
+
+    catch(err){
+
       if(!err?.response) {
         setErrMsg('No Server Response')
 
@@ -74,31 +85,12 @@ const Signin = () => {
       }
       errRef.current.focus();
     }
-
+    
     
 
   }
   return (
-    <>
-    {success? (
-      <div className='signin-success-main'>
-      <div class="signin-success-main-core">
-      
-          <div class="signin-success-switch" id="switch-cnt">
-  
-              <div class="signin-success-switch__circle"></div>
-              <div class="signin-success-switch__circle signin-success-switch__circle--t"></div>
-  
-              <div class="signin-success-switch__container " id="switch-c2">
-              <h2 class="signin-success-switch__title signin-success-title">Welcome!</h2>
-              <p class="signin-success-switch__description signin-success-description">Feel free to persistently log in to your account.</p>
-              <button class="signin-success-switch__button signin-success-button signin-success-switch-btn" onClick={() => { navigate("/dashboard"); }}>DASHBOARD</button>
-              </div>
-          </div>
-      </div>
-  </div>
-
-    ):(
+    
     
     <div className='signin-main'>
       <div class="signin-main-core">
@@ -145,8 +137,9 @@ const Signin = () => {
             placeholder="Password" 
             required
             />
-
+            
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+            
             
             
             <button class="signin-form__button signin-button signin-submit">SIGN IN</button>
@@ -176,9 +169,7 @@ const Signin = () => {
       </div>
     </div>
   )
-    }
-    </>
-  )
+    
 }
 
 export default Signin

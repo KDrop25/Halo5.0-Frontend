@@ -91,7 +91,7 @@ const Regrecoil = () => {
         {Screen1 && (
           <div class="regrecoil-container regrecoil-b-container regrecoil-is-gx1" id="b-container">
 
-            <form class="regrecoil-form" id="b-form" method="" action="">
+            <form class="regrecoil-form" id="b-form" method="" action="" onSubmit={next1}>
 
               <h2 class="regrecoil-form_title regrecoil-title">Recoil Registrations</h2>
               <span class="regrecoil-form__span">or use your email account</span>
@@ -103,12 +103,12 @@ const Regrecoil = () => {
 
               </div>
 
-              <input class="regrecoil-form__input" id='first_name' type="text" placeholder="First Name" />
-              <input class="regrecoil-form__input" id='last_name' type="text" placeholder="Last Name" />
-              <input class="regrecoil-form__input" id='user_email' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Phone" />
+              <input class="regrecoil-form__input" id='first_name' type="text" placeholder="First Name" required/>
+              <input class="regrecoil-form__input" id='last_name' type="text" placeholder="Last Name" required/>
+              <input class="regrecoil-form__input" id='user_email' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Phone" required/>
 
-              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" onClick={next1}>NEXT</button>
+              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" >NEXT</button>
             </form>
             <div class="regrecoil-switch__circle"></div>
             <div class="regrecoil-switch__circle regrecoil-switch__circle--t"></div>
@@ -119,22 +119,22 @@ const Regrecoil = () => {
         {Screen2 && (
           <div class="regrecoil-container2 regrecoil-b-container2 regrecoil-is-gx2" id="b-container">
 
-            <form class="regrecoil-form" id="b-form" method="" action="">
+            <form class="regrecoil-form" id="b-form" method="" action="" onSubmit={next2}>
 
               <h2 class="regrecoil-form_title regrecoil-title">Page 2</h2>
 
 
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
 
               <button class="regrecoil-form__button regrecoil-button regrecoil-submit" onClick={back1}>BACK</button>
-              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" onClick={next2}>NEXT</button>
+              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" >NEXT</button>
             </form>
             <div class="regrecoil-switch__circle"></div>
             <div class="regrecoil-switch__circle regrecoil-switch__circle--t"></div>
@@ -144,22 +144,22 @@ const Regrecoil = () => {
         {Screen3 && (
           <div class="regrecoil-container3 regrecoil-b-container3 regrecoil-is-gx3" id="b-container">
 
-            <form class="regrecoil-form" id="b-form" method="" action="">
+            <form class="regrecoil-form" id="b-form" method="" action="" onSubmit={() => { navigate("/recoil"); }}>
 
               <h2 class="regrecoil-form_title regrecoil-title">Page 3</h2>
 
 
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
-              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" />
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regrecoil-form__input" id='user_phone' type="text" placeholder="Email" required/>
 
 
 
 
               <button class="regrecoil-form__button regrecoil-button regrecoil-submit" onClick={back2}>BACK</button>
-              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" onClick={() => { navigate("/recoil"); }}>SUBMIT</button>
+              <button class="regrecoil-form__button regrecoil-button regrecoil-submit" >SUBMIT</button>
             </form>
             <div class="regrecoil-switch__circle"></div>
             <div class="regrecoil-switch__circle regrecoil-switch__circle--t"></div>

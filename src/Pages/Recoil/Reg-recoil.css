@@ -330,34 +330,6 @@
   color: white;
 }
 
-.regrecoil-button {
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  margin-top: 40px;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--font-family-montserrat);
-  letter-spacing: 1.15px;
-  background-color: var(--color-bg);
-  color: white;
-  box-shadow: 8px 8px 16px var(--glow), -8px -8px 16px var(--glow);
-  border: none;
-  outline: none;
-}
-
-.regrecoil-button:hover {
-  box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
-  transform: scale(0.985);
-  transition: 0.25s;
-}
-
-.regrecoil-button:active,
-.regrecoil-button:focus {
-  box-shadow: 2px 2px 6px var(--glow-2), -2px -2px 6px var(--glow-2);
-  transform: scale(0.97);
-  transition: 0.25s;
-}
 
 .regrecoil-is-gx1 {
   animation: test-is-gx 2s;
