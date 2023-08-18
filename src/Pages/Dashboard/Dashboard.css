@@ -310,22 +310,20 @@
 
 
 
-/* Adjust styles for smaller screens */
 @media (max-width: 768px) {
 .dashboard-main {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     align-items: center;
-    padding: 1rem; /* Reduce padding for smaller screens */
+    padding: 1rem; 
 }
 
 .dashboard-card-group,
 .dashboard-navigation-card {
-    width: 100%; /* Make cards take full width on smaller screens */
-    margin: 10px 0; /* Add some vertical spacing between cards */
-    box-shadow: 0px 0px 5px var(--glow); /* Adjust shadow */
+    width: 100%; 
+    margin: 10px 0; 
+    box-shadow: 0px 0px 5px var(--glow); 
 }
 
-/* ...other adjustments for smaller screens... */
 }
 @media (max-width: 350px) {
     .dashboard-main{

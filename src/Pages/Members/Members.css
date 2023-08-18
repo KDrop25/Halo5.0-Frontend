@@ -107,9 +107,6 @@
   font-size: medium;
 }
 
-/* Existing CSS styles */
-
-/* Add media query for smaller screens */
 @media (max-width: 768px) {
   .members-horizontal-card {
     flex-direction: column;

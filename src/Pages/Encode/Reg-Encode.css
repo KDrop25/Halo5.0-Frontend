@@ -149,7 +149,7 @@
   font-family: inherit;
   padding: 0.35em;
   margin-top: 30px;
-  padding-right: 1.2em; /* Change from padding-left to padding-right */
+  padding-right: 1.2em; 
   font-weight: 700;
   font-size: 16px;
   font-family: var(--font-family-montserrat);
@@ -157,16 +157,16 @@
   border: none;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Change from center to flex-start */
+  justify-content: flex-start; 
   overflow: hidden;
   position: relative;
   height: 2.8em;
-  padding-left: 3.3em; /* Change from padding-right to padding-left */
+  padding-left: 3.3em; 
 }
 
 .regencode-icon-back {
   background: var(--color-white);
-  margin-right: 1em; /* Change from margin-left to margin-right */
+  margin-right: 1em; 
   position: absolute;
   display: flex;
   align-items: center;
@@ -175,7 +175,7 @@
   width: 2.2em;
   border-radius: 25px;
   box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color-iobutton);
-  left: 0.3em; /* Change from right to left */
+  left: 0.3em; 
   transition: all 0.3s;
 }
 
@@ -188,7 +188,7 @@
 
 .regencode-cssbuttons-io-button-back:hover .regencode-icon-back {
   width: calc(100% - 0.6em);
-   /* Revert to the original left position */
+  
 }
 
 .regencode-cssbuttons-io-button-back:hover .regencode-icon-back svg {
@@ -208,7 +208,6 @@
 
 
 @media (max-width: 768px) {
-  /* Mobile first */
 .regencode-main {
   display: flex;
   flex-direction: column;
@@ -225,14 +224,13 @@
   gap: 0.5rem;
   padding: 2rem;
   
-  width: 100%; /* Set maximum width */
-  max-width: 400px; /* Adjust as needed */
+  width: 100%; 
+  max-width: 400px; 
   background-color: var(--color-bg);
   box-shadow: 10px 10px 10px var(--glow), -10px -10px 10px var(--glow);
   border-radius: 12px;
 }
 
-/* Common styles */
 .regencode-heading-text {
   font-family: var(--font-family-montserrat);
   font-weight: 600;
@@ -252,7 +250,7 @@
 }
 
 .regencode-form__input {
-  width: 100%; /* Take full width */
+  width: 100%; 
   min-height: 40px;
   margin: 4px 0;
   padding-left: 25px;
@@ -277,20 +275,17 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 100%; /* Take full width */
+  width: 100%; 
 }
 
 .regencode-cssbuttons-io-button,
 .regencode-cssbuttons-io-button-back {
-  /* Rest of your button styles remain unchanged */
-  width: 100%; /* Take full width */
+  width: 100%; 
 }
 
 .regencode-icon,
 .regencode-icon-back {
-  /* Rest of your icon styles remain unchanged */
   justify-content: center;
-  /* For horizontal alignment of icons within buttons */
 }
 
 }

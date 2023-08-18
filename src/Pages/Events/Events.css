@@ -108,9 +108,6 @@
   opacity: 0.5;
 }
 
-/* Existing CSS styles */
-
-/* Add media query for smaller screens */
 @media (max-width: 768px) {
   
 
@@ -131,28 +128,25 @@
 
 
 
-/* Your existing CSS */
-
-/* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .events-main {
     padding: 1rem;
   }
 
   .events-core {
-    gap: 10px; /* Adjust gap for smaller screens */
+    gap: 10px; 
   }
 
   .events-cards-row {
-    gap: 15px; /* Adjust gap for smaller screens */
+    gap: 15px; 
   }
 
   .events-heading-text {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem; 
   }
 
   .events-vertical-card {
-    width: calc(50% - 10px); /* 2 cards in a row with some gap */
+    width: calc(50% - 10px); 
     height: auto;
     padding: 0.5rem;
   }
@@ -167,26 +161,25 @@
   }
 
   .events-vertical-name-text {
-    font-size: large; /* Adjust font size for smaller screens */
+    font-size: large; 
     
   }
 
   .events-vertical-info-text {
-    font-size: small; /* Adjust font size for smaller screens */
+    font-size: small; 
   }
 
   .events-button {
-    font-size: small; /* Adjust font size for smaller screens */
-    width: 100px; /* Adjust button width for smaller screens */
-    height: 40px; /* Adjust button height for smaller screens */
-    margin: 1rem 0; /* Adjust button margin for smaller screens */
+    font-size: small; 
+    width: 100px; 
+    height: 40px; 
+    margin: 1rem 0; 
   }
 }
 
-/* Media query for phones and smaller screens */
 @media (max-width: 480px) {
   .events-vertical-card {
-    width: 100%; /* Cards take full width on smaller screens */
+    width: 100%; 
   }
 
   .events-vertical-card-userimage {

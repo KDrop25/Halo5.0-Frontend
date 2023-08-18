@@ -1,9 +1,6 @@
-src/Pages/Sign-in/Forgotpass.jsx src/Pages/Sign-in/Forgotpass.css.forgotpass-success-email-input{
-    display: flex;
-}
 
 
-/* Generic */
+
 .forgotpass-success-main {
     display: flex;
     padding-bottom: 3rem;
@@ -18,7 +15,6 @@ src/Pages/Sign-in/Forgotpass.jsx src/Pages/Sign-in/Forgotpass.css.forgotpass-suc
     justify-content: center;
     align-items: center;
   }
-  /**/
   .forgotpass-success-main-core {
     position: relative;
   
@@ -105,7 +101,7 @@ src/Pages/Sign-in/Forgotpass.jsx src/Pages/Sign-in/Forgotpass.css.forgotpass-suc
   justify-content: space-around;
   
 }
-/**/
+
 .forgotpass-main-core {
 position: relative;
 
@@ -347,7 +343,7 @@ line-height: 1.6;
 
 
 
-/**/
+
 .forgotpass-a-container {
 z-index: 100;
 left: calc(100% - 600px );
@@ -495,7 +491,6 @@ transition: 0.25s;
     transform: scale(0.985);
     transition: 0.25s;
   }
-  /* Generic */
 
 .forgotpass-success-main {
   display: flex;
@@ -506,7 +501,6 @@ transition: 0.25s;
 
 }
 
-/**/
 .forgotpass-success-main-core {
   position: relative;
 
@@ -683,7 +677,6 @@ transition: 0.25s;
 
 
 
-/**/
 .forgotpass-success-a-container {
   z-index: 100;
   left: calc(100% - 600px);
@@ -797,7 +790,6 @@ transition: 0.25s;
 
 
 
-/**/
   
   .forgotpass-success-switch__button:active,
   .switch__button:focus {
@@ -828,7 +820,6 @@ transition: 0.25s;
 
 
 
-/**/
 .is-txr {
 left: calc(100% - 400px );
 transition: 1.25s;

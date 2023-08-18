@@ -1,6 +1,6 @@
 
 
-/* Generic */
+
 .signup-success-main {
     display: flex;
     padding-bottom: 3rem;
@@ -10,7 +10,6 @@
   
   }
   
-  /**/
   .signup-success-main-core {
     position: relative;
   
@@ -98,7 +97,7 @@
   justify-content: space-around;
   
 }
-/**/
+
 .signup-main-core {
 position: relative;
 
@@ -264,7 +263,7 @@ line-height: 1.6;
 
 
 
-/**/
+
 .signup-a-container {
 z-index: 100;
 left: calc(100% - 600px );
@@ -412,7 +411,7 @@ transition: 0.25s;
     transform: scale(0.985);
     transition: 0.25s;
   }
-  /* Generic */
+  
 
 .signup-success-main {
   display: flex;
@@ -423,7 +422,7 @@ transition: 0.25s;
 
 }
 
-/**/
+
 .signup-success-main-core {
   position: relative;
 
@@ -600,7 +599,7 @@ transition: 0.25s;
 
 
 
-/**/
+
 .signup-success-a-container {
   z-index: 100;
   left: calc(100% - 600px);
@@ -714,7 +713,7 @@ transition: 0.25s;
 
 
 
-/**/
+
   
   .signup-success-switch__button:active,
   .switch__button:focus {
@@ -745,7 +744,7 @@ transition: 0.25s;
 
 
 
-/**/
+
 .is-txr {
 left: calc(100% - 400px );
 transition: 1.25s;

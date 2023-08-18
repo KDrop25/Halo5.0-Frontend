@@ -126,35 +126,32 @@ transform: scale(0.95);
 
 
 
-/* Existing styles */
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .home-hero-halocon-text {
-      font-size: 50px; /* Adjust font size for smaller screens */
+      font-size: 50px; 
     }
   
     .home-hero-year-text {
-      font-size: 40px; /* Adjust font size for smaller screens */
+      font-size: 40px; 
     }
   
     .home-ellipse-img {
-      width: 300px; /* Adjust image width */
+      width: 300px; 
     }
   
     .home-halolegion-logo {
-      width: 350px; /* Adjust image width */
+      width: 350px; 
     }
   
     .home-info-text {
-      font-size: 14px; /* Adjust font size for smaller screens */
-      margin: 10px; /* Add margin for better readability */
+      font-size: 14px; 
+      margin: 10px; 
     }
   
     .home-button-container {
-      flex-direction: column; /* Stack buttons in a column on small screens */
-      gap: 10px; /* Adjust gap between buttons */
-      margin-top: 20px; /* Add space between buttons and paragraph */
+      flex-direction: column; 
+      gap: 10px; 
+      margin-top: 20px; 
     }
   }
   

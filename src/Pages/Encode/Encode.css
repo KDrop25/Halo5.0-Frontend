@@ -190,35 +190,33 @@
 
 @media (max-width: 768px) {
     .encode-cards-row {
-      flex-direction: column; /* Stack the cards vertically on small screens */
+      flex-direction: column;
     }
   
     .encode-horizontal-card {
-      width: 100%; /* Make the horizontal card take full width on small screens */
-      height: auto; /* Allow height to adjust based on content */
+      width: 100%; 
+      height: auto; 
       padding: 1rem;
     }
   
     .encode-horizontal-card-left,
     .encode-horizontal-card-right {
-      width: 100%; /* Make the card sections take full width on small screens */
+      width: 100%;
       text-align: center;
     }
   
     .encode-horizontal-card-userimage {
       width: 200px;
-      height: 200px; /* Reduce image size on small screens */
-    }
+      height: 200px; 
   
     .encode-event-button {
-      width: 100%; /* Make the button take full width on small screens */
+      width: 100%; 
     }
   
     .encode-info p {
-      font-size: 16px; /* Reduce font size for smaller screens */
+      font-size: 16px; 
     }
   
-    /* Adjust other styles as needed for responsiveness */
   }
 
 
@@ -230,7 +228,7 @@
 }
 .encode-horizontal-card-userimage {
     width: 150px;
-    height: 150px; /* Reduce image size on small screens */
+    height: 150px; 
   }
 }
 @media (max-width: 350px) {

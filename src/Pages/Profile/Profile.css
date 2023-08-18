@@ -257,18 +257,17 @@ box-shadow: inset 4px 4px 4px var(--glow-2), inset -4px -4px 4px var(--glow-2);
     
 }
 .profile-form-picture-container {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 150px; 
+    height: 150px; 
     border-radius: 50%;
-    overflow: hidden; /* This hides any parts of the image outside the circle */
+    overflow: hidden; 
   }
   
-  /* Style for the circular image */
-  .profile-form__icon-top {
+.profile-form__icon-top {
     width: 60%;
     height: 70%;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image fills the circular container */
+    object-fit: cover; 
   }
 .profile-picture{
     display: none;
@@ -430,7 +429,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     .profile-main {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
     }
@@ -445,12 +444,11 @@ cursor: pointer;
     }
     .profile-card-group,
     .profile-navigation-card {
-        width: 100%; /* Make cards take full width on smaller screens */
-        margin: 10px 0; /* Add some vertical spacing between cards */
-        box-shadow: 0px 0px 5px var(--glow); /* Adjust shadow */
+        width: 100%; 
+        margin: 10px 0; 
+        box-shadow: 0px 0px 5px var(--glow); 
     }
     
-    /* ...other adjustments for smaller screens... */
     }
 
 @media (max-width: 600px) {

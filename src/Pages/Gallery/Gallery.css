@@ -29,7 +29,7 @@
 }
 .gallery-App, .gallery-product--image {
     width: 1200px;
-    margin: 0 -20px; /* Center the content horizontally */
+    margin: 0 -20px; 
 }
 
 .gallery-product--image {
