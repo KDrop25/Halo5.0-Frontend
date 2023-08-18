@@ -11,17 +11,18 @@
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white)
 
 
 
 }
 
 
-.main-encode {
-    padding: 2rem 0rem;
-
-
+.encode-bottom {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -41,25 +42,61 @@
     display: flex;
     justify-content: center;
     padding: 1rem 0rem;
+    z-index: -9;
 }
 
-.encode {
-    border-radius: var(--br-3xs);
-    background-color: var(--member-plaque);
-    border: 1px solid var(--glow);
-    height: 200px;
-    width: 590px;
+
+
+.encode-cards-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    
+  }
+  .encode-heading-text{
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
     text-align: center;
-    align-self: center;
-
-
-
-}
-
-
+  }
+  .encode-horizontal-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 800px;
+    height: 250px;
+    background-color: var(--member-plaque);
+    
+    border-radius: 15px;
+  }
+  
+  .encode-horizontal-card-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .encode-horizontal-card-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .encode-horizontal-card-userimage{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
 .encode-info {
     position: relative;
     align-self: center;
+    
 }
 
 .encode-ellipse-img {
@@ -93,7 +130,13 @@
     font-weight: 500;
     color: var(--color-dimgray-200);
 }
-
+.encode-main{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+}
 
 .encode-event-button {
     border-radius: 5px;
@@ -101,13 +144,14 @@
     width: 190px;
     height: 50px;
     cursor: pointer;
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 0px;
     font-size: medium;
     font-weight: 600;
     font-family: var(--font-family-montserrat);
     border: 0px;
     text-align: center;
+    
 }
 
 .encode-event-button:hover {
@@ -135,9 +179,63 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 var(--black-drop-shadow);
     max-width: 320px;
     margin: auto 1rem;
     text-align: center;
     font-family: arial;
 }
+
+
+
+@media (max-width: 768px) {
+    .encode-cards-row {
+      flex-direction: column; /* Stack the cards vertically on small screens */
+    }
+  
+    .encode-horizontal-card {
+      width: 100%; /* Make the horizontal card take full width on small screens */
+      height: auto; /* Allow height to adjust based on content */
+      padding: 1rem;
+    }
+  
+    .encode-horizontal-card-left,
+    .encode-horizontal-card-right {
+      width: 100%; /* Make the card sections take full width on small screens */
+      text-align: center;
+    }
+  
+    .encode-horizontal-card-userimage {
+      width: 200px;
+      height: 200px; /* Reduce image size on small screens */
+    }
+  
+    .encode-event-button {
+      width: 100%; /* Make the button take full width on small screens */
+    }
+  
+    .encode-info p {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  
+    /* Adjust other styles as needed for responsiveness */
+  }
+
+
+
+
+@media (max-width: 400px) {
+.encode-cards-row{
+    scale: 0.9;
+}
+.encode-horizontal-card-userimage {
+    width: 150px;
+    height: 150px; /* Reduce image size on small screens */
+  }
+}
+@media (max-width: 350px) {
+    .encode-cards-row{
+        scale: 0.8;
+    }
+    }
+  

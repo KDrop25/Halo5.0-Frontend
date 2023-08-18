@@ -6,9 +6,7 @@ import halologo from '../../assets/Halolegion logo Trans 500by500.png'
 const About = () => {
   return (
     <div class = "main-privacy">
-      <div class="privacy-bg-logo">
-        <img class="privacy-bg-halolegion-logo" alt="logo" src={halologo}/>
-      </div>
+      
       <div class = 'privacy-heading'>
         <p>Privacy Policy</p>
       </div>

@@ -1,6 +1,10 @@
-.gallery-he {
+.gallery-main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 1rem;
+    
 
 }
 
@@ -9,38 +13,65 @@
     font-weight: 600;
     font-size: 50px;
     height: 40px;
-    color: #FFFFFF;
+    color: var(--color-whtie);
     text-align: center;
 }
 
-.gallery-test {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
 
-
-
-
-
+.gallery-carousel{
+    z-index: -8;
+    
 }
-
 .gallery-App {
     padding: 2rem 0rem;
-    width: 1000px;
     height: fit-content;
+    
+}
+.gallery-App, .gallery-product--image {
+    width: 1200px;
+    margin: 0 -20px; /* Center the content horizontally */
 }
 
 .gallery-product--image {
-    width: 975px;
-    height: 35em;
+    height: auto;
     object-fit: cover;
 }
 
 
 
-.main {
-    text-align: center;
-    margin-top: 30px;
+@media (max-width: 1200px) {
+    .gallery-App, .gallery-product--image {
+        width: 1000px;
+        
+    }
+}
+@media (max-width: 1000px) {
+    .gallery-App, .gallery-product--image {
+        width: 800px;
+        
+    }
+}
+@media (max-width: 800px) {
+    .gallery-App, .gallery-product--image {
+        width: 600px;
+        
+    }
+}
+@media (max-width: 600px) {
+    .gallery-App, .gallery-product--image {
+        width: 400px;
+        
+    }
+}
+@media (max-width: 400px) {
+    .gallery-App, .gallery-product--image {
+        width: 350px;
+        
+    }
+}
+@media (max-width: 350px) {
+    .gallery-App, .gallery-product--image {
+        width: 300px;
+        
+    }
 }

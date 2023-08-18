@@ -27,9 +27,10 @@
 }
 .unauthorised-goback-button {
     border-radius: 5px;
+    margin:15px;
     background-color: var(--color-transparent);
     font-family: var(--font-family-montserrat);
-    border-color: #858487;
+    border-color: var(--color-white);
     border-style: solid;
     width: 190px;
     text-align: center;
@@ -37,5 +38,5 @@
     font-weight: 600;
     cursor: pointer;
     height: 50px;
-    color: #FFFFFF;
+    color: var(--color-white)
 }

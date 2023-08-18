@@ -1,0 +1,29 @@
+/* Watermark.css */
+.watermark-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: -99999;
+    opacity: 0.5; /* Adjust opacity as needed */
+    pointer-events: none; /* Prevent interactions with the watermark */
+    
+  }
+.watermark-container{
+  position: fixed;
+  width: 100%;
+  
+}
+  
+  .watermark-text {
+    font-size: 14px;
+    color: #ccc; /* Adjust color as needed */
+  }
+  .watermark-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }

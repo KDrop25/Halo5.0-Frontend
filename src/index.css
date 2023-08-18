@@ -8,8 +8,10 @@
 
 
 body {
-  margin: 0;
   line-height: normal;
+  overflow-x: hidden;
+  
+  
 }
 
 
@@ -56,6 +58,8 @@ body {
   --font-size-21xl: 40px;
   --font-size-17xl: 36px;
 
+  --font-color: #ffffff;
+
   /* Colors */
   --color-gray-100: #12131e;
   --events-cards: rgba(30, 30, 44, 0.7);
@@ -63,10 +67,13 @@ body {
   --color-gray-300: rgba(133, 132, 135, 0.35);
   --color-white: #fff;
   --color-midnightblue: #442077;
+  --color-iobutton: #7b52b9;
+  --color-border:#c8ccd4;
   
   --color-dimgray-100: #4e4e59;
   --color-dimgray-200: #6a6a79;
   --glow: rgba(78, 78, 89, 0.5);
+  --black-drop-shadow: rgba(0, 0, 0, 0.2);
   --glow-white:#d6d6d6;
   --gg: #888fff;
   --color-transparent: #ffffff00;

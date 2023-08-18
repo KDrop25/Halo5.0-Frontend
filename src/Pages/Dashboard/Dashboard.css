@@ -3,24 +3,34 @@
     align-items: center;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
-    padding: 0rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0rem 1rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
     
 }
 .dashboard-card-main{
     background-color: var(--color-menu);
+    display: flex;    
+    flex-direction: column;
     
+    justify-content: center;
+    align-items: center;
 }
 .dashboard-navigation-cards-group-upper{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
 }
 .dashboard-card-group-mid{
     display: flex;
+    flex-wrap: wrap;
     margin: 0px 5px;
     justify-content: center;
     align-items: center;
@@ -29,6 +39,7 @@
 }
 .dashboard-card-group-top{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0px 5px;
@@ -36,6 +47,7 @@
 }
 .dashboard-card-group-bottom{
     display: flex;
+    flex-wrap: wrap;
     margin: 0px 5px;
     justify-content: center;
     align-items: center;
@@ -44,6 +56,7 @@
 }
 .dashboard-navigation-cards-group-lower{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -51,29 +64,40 @@
 }
 .dashboard-navigation-card{
     padding: 10px 0px;
-    width: 200px;
-    height: 600px;
+    
+    width: 215px;
+    height: auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
+    
     align-items: center;
     align-self: stretch;
     border-radius: 10px;
     box-shadow: 0px 0px 5px var(--glow),-5px 0px 5px var(--glow),0px 5px 5px var(--glow),0px -5px 5px var(--glow);
 }
-.dashboard-card-group{
-    width: 1245px;
-    padding: 10px;
+.dashboard-card-group-align{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+
+}
+.dashboard-card-group{
+    width: 1200px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    height: 600px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 5px 0px 5px var(--glow),0px 0px 5px var(--glow),0px 5px 5px var(--glow),0px -5px 5px var(--glow);
     
 }
+
 .dashboard-navigation-cards{
     
     width: 150px;
@@ -85,6 +109,7 @@
 .dashboard-cards{
     background-color: var(--color-gray-300);
     border-radius: 10px;
+    margin: 5px 0px;
     
 }
 .dashboard-cards:hover {
@@ -97,7 +122,9 @@
     width: 290px;
     height: 180px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     
@@ -108,6 +135,14 @@
     align-self: stretch;
 }
 .dashboard-form__icon {
+    object-fit: contain;
+    width: 30px;
+    margin: 0 5px;
+    opacity: 1;
+    transition: 0.15s;
+    
+}
+.dashboard-form__icon-hero {
     object-fit: contain;
     width: 30px;
     margin: 0 5px;
@@ -142,7 +177,7 @@
 .dashboard-navigation-hero-menu-text{
     font-family:var(--font-family-montserrat);
     font-weight: 600;
-    color: white;
+    color: var(--color-white);
     font-size:18px;
     margin-top: 0px;
     text-align: center;
@@ -150,7 +185,7 @@
 .dashboard-navigation-hero-profile-text{
     font-family:var(--font-family-montserrat);
     font-weight: 600;
-    color: white;
+    color: var(--color-white);
     font-size:18px;
     text-align: center;
 }
@@ -169,23 +204,26 @@
     transition: 0.15s;
 }
 .dashboard-form__icon:hover {
-opacity: 0.5;
-transition: 0.15s;
-cursor: pointer;
+    opacity: 0.5;
+    transition: 0.15s;
+    cursor: pointer;
 }
 .dashboard-navigation-cards-menu{
     width: 180px;
     height: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin: 3px 0px;
+    cursor: pointer;
     
 }
 .dashboard-navigation-cards-profile{
     width: 180px;
     height: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin: 3px 0px;
@@ -194,7 +232,7 @@ cursor: pointer;
 .dashboard-navigation-hero-text{
     font-family:var(--font-family-montserrat);
     font-weight: 600;
-    color: white;
+    color: var(--color-white);
     font-size:20px;
     margin-top: 10px;
     text-align: center;
@@ -204,6 +242,7 @@ cursor: pointer;
 .dashboard-navigation-cards-hero{
     width: 180px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -213,7 +252,9 @@ cursor: pointer;
 }
 .dashboard-cards-top{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     width: 230px;
@@ -223,18 +264,22 @@ cursor: pointer;
 
 .dashboard-horizontal-cards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 10px;
+    gap: 5px;
     padding: 10px 0px;
 }
 .dashboard-navigation-card-group-top,.dashboard-navigation-card-group-mid{
     flex-direction: column;
+    
 }
 
 
 .dashboard-navigation-card-group-bottom{
     flex-direction:column-reverse;
+    
     
 
 }
@@ -245,9 +290,11 @@ cursor: pointer;
 }
 .dashboard-vertical-cards-upper{
     display: flex;
+    flex-wrap: wrap;
 }
 .dashboard-vertical-cards-lower{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -261,4 +308,28 @@ cursor: pointer;
 
 
 
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+.dashboard-main {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 1rem; /* Reduce padding for smaller screens */
+}
+
+.dashboard-card-group,
+.dashboard-navigation-card {
+    width: 100%; /* Make cards take full width on smaller screens */
+    margin: 10px 0; /* Add some vertical spacing between cards */
+    box-shadow: 0px 0px 5px var(--glow); /* Adjust shadow */
+}
+
+/* ...other adjustments for smaller screens... */
+}
+@media (max-width: 350px) {
+    .dashboard-main{
+        scale: 0.9;
+    }
+    }
     

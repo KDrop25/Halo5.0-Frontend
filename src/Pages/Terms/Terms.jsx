@@ -6,9 +6,7 @@ import halologo from '../../assets/Halolegion logo Trans 500by500.png'
 const terms = () => {
   return (
     <div class = "main-terms">
-      <div class="terms-bg-logo">
-        <img class="terms-bg-halolegion-logo" alt="logo" src={halologo}/>
-      </div>
+      
       <div class = 'terms-heading'>
         <p>Terms & Conditions</p>
       </div>

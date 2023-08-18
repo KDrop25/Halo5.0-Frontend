@@ -15,7 +15,8 @@ import axios from '../../api/axios';
 
 
 
-const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
+
+const USER_REGEX = /^[A-z][A-z0-9-_]{3,10}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const EMAIL_REGEX = /^[A-z][A-z0-9-_](?=.*[@]).{2,32}$/;
 const REGISTER_URL = '/register';
@@ -25,10 +26,10 @@ const REGISTER_URL = '/register';
 
 const Signup = () => {
     const navigate = useNavigate();
-    
+
     const userRef = useRef();
     const errRef = useRef();
-    
+
     const [user, setUser] = useState('');
     const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false);
@@ -107,7 +108,7 @@ const Signup = () => {
             errRef.current.focus();
         }
     }
-  
+    
   
   
     return (
@@ -141,11 +142,11 @@ const Signup = () => {
                         
                         <span class="signup-form__span1">Our Socials</span>
                         <div class="signup-form__icons">
-                            <a href=''><img class="signup-form__icon" src={discordlogo} /></a>
-                            <a href=''><img class="signup-form__icon" src={youtubelogo} /></a>
-                            <a href=''><img class="signup-form__icon" src={githublogo} /></a>
-                            <a href=''><img class="signup-form__icon" src={twitterlogo} /></a>
-                            <a href=''><img class="signup-form__icon" src={instagramlogo} /></a>
+                            <a href='g'><img class="signup-form__icon" src={discordlogo} alt=''/></a>
+                            <a href='g'><img class="signup-form__icon" src={youtubelogo} alt=''/></a>
+                            <a href='g'><img class="signup-form__icon" src={githublogo} alt=''/></a>
+                            <a href='g'><img class="signup-form__icon" src={twitterlogo} alt=''/></a>
+                            <a href='g'><img class="signup-form__icon" src={instagramlogo} alt=''/></a>
                         </div>
 
 
@@ -217,11 +218,16 @@ const Signup = () => {
                         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                             
                         
-                        <button class="signup-form__button signup-button signup-submit" disabled ={!validName || !validPwd || !validEmail ? true : false}>SIGN UP</button>
+                        
+                        <button class="cssbuttons-io-button" disabled ={!validName || !validPwd || !validEmail ? true : false}> SIGN UP
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                            </div>
+                        </button>
                         <a href="Forgotpass" class="signup-form__login">Sign up using</a>
                         <div class="signup-form__icons">
-                        <a href='https://discord.com'><img class="signup-form__icon" src={googleloginlogo} alt=""/></a>
-                        <a href='https://discord.com'><img class="signup-form__icon" src={discordloginlogo} alt=""/></a>
+                        <img class="signup-form__icon" src={googleloginlogo} alt="" />
+                        <img class="signup-form__icon" src={discordloginlogo} alt=""/>
                         
                         
 

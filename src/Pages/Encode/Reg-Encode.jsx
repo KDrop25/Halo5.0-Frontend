@@ -87,87 +87,104 @@ const Regencode = () => {
 
   return (
     <div className='regencode-main'>
-      <div class="regencode-main-core">
-        {Screen1 && (
-          <div class="regencode-container regencode-b-container regencode-is-gx1" id="b-container">
-
-            <form class="regencode-form" id="b-form" method="" action="" onSubmit={next1}>
-
-              <h2 class="regencode-form_title regencode-title">Encode Registrations</h2>
-              <span class="regencode-form__span">or use your email account</span>
-
-              <div className='regencode-ellipse' onClick={handleClick} style={{ cursor: "pointer" }}>
-                {image ? (<img src={URL.createObjectURL(image)} alt="" className="regencode-ellipse-img" />) : (<img src={userlogo} alt="" className="regencode-ellipse-img" />)}
-                <input id="image-upload-input" type="file" onChange={handleImageChange} ref={hiddenFileInput} style={{ display: "none" }} />
-
-
-              </div>
-
-              <input class="regencode-form__input" id='first_name' type="text" placeholder="First Name" required/>
-              <input class="regencode-form__input" id='last_name' type="text" placeholder="Last Name" required/>
-              <input class="regencode-form__input" id='user_email' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Phone" required/>
-
-              <button class="regencode-form__button regencode-button regencode-submit" >NEXT</button>
-            </form>
-            <div class="regencode-switch__circle"></div>
-            <div class="regencode-switch__circle regencode-switch__circle--t"></div>
+      
+      {Screen1 && (
+        <div class="regencode-main-core">
+          
+          <div className='regencode-main-vertical'>
+            <div className='regencode-heading'>
+              <h1 className='regencode-heading-text'>ENCODE REGISTRATIONS</h1>
+            </div>
+            <div className='regencode-userimg-container'>
+              <img className="regencode-userimg"src={userlogo}/>
+            </div>
+            <div className='regencode-input-fields'>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+            </div>
+            <div className='regencode-button-container'>
+              
+              <button class="regencode-cssbuttons-io-button" onClick={next1}> NEXT
+                <div class="regencode-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                </div>
+              </button>
+              
+            </div>
           </div>
-        )}
+          
+        </div>
+      )}
+      {Screen2 && (
+        <div class="regencode-main-core">
+        <div className='regencode-heading'>
+          <h1 className='regencode-heading-text'>ENCODE REGISTRATIONS</h1>
+          <h2 className='regencode-heading-text'>PAGE 2</h2>
+        </div>
+        <div className='regencode-userimg-container'>
+          <img className="regencode-userimg"src={userlogo}/>
+        </div>
+        <div className='regencode-input-fields'>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+        </div>
+        <div className='regencode-button-container'>
+          <button class="regencode-cssbuttons-io-button-back" onClick={back1}> BACK
+            <div class="regencode-icon-back">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          <button class="regencode-cssbuttons-io-button" onClick={next2}> NEXT
+            <div class="regencode-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          
+        </div>
+        </div>
+      )}
+      {Screen3 && (
+        <div class="regencode-main-core">
+         
+        <div className='regencode-heading'>
+          <h1 className='regencode-heading-text'>ENCODE REGISTRATIONS</h1>
+          
+        </div>
+        <div className='regencode-userimg-container'>
+          <img className="regencode-userimg"src={userlogo}/>
+        </div>
+        <div className='regencode-input-fields'>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
+        </div>
+        <div className='regencode-button-container'>
+          <button class="regencode-cssbuttons-io-button-back" onClick={back2}> BACK
+            <div class="regencode-icon-back">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          <button class="regencode-cssbuttons-io-button" onClick={next2}> SUBMIT
+            <div class="regencode-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          
+        </div>
+        </div>
+      )}
+      
+      
+
+        
 
 
-        {Screen2 && (
-          <div class="regencode-container2 regencode-b-container2 regencode-is-gx2" id="b-container">
-
-            <form class="regencode-form" id="b-form" method="" action="" onSubmit={next2}>
-
-              <h2 class="regencode-form_title regencode-title">Page 2</h2>
-
-
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-
-
-
-
-              <button class="regencode-form__button regencode-button regencode-submit" onClick={back1}>BACK</button>
-              <button class="regencode-form__button regencode-button regencode-submit" onClick={next2}>NEXT</button>
-            </form>
-            <div class="regencode-switch__circle"></div>
-            <div class="regencode-switch__circle regencode-switch__circle--t"></div>
-          </div>
-        )}
-
-        {Screen3 && (
-          <div class="regencode-container3 regencode-b-container3 regencode-is-gx3" id="b-container">
-
-            <form class="regencode-form" id="b-form" method="" action="" onSubmit={() => { navigate("/encode"); }}>
-
-              <h2 class="regencode-form_title regencode-title">Page 3</h2>
-
-
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regencode-form__input" id='user_phone' type="text" placeholder="Email" required/>
-
-
-
-
-              <button class="regencode-form__button regencode-button regencode-submit" onClick={back2}>BACK</button>
-              <button class="regencode-form__button regencode-button regencode-submit" >SUBMIT</button>
-            </form>
-            <div class="regencode-switch__circle"></div>
-            <div class="regencode-switch__circle regencode-switch__circle--t"></div>
-          </div>
-        )}
-
-
-      </div>
+      
     </div>
   )
 }

@@ -1,153 +1,62 @@
-/* Generic */
-
 .regqurious-main {
   display: flex;
-  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-top: 1rem;
-
-  justify-content: space-around;
-
+  padding-bottom: 2rem;
+  
+  
 }
 
-/**/
 .regqurious-main-core {
 
-  position: relative;
-
-
-  width: 1000px;
-  min-width: 1000px;
-  min-height: 600px;
-  height: 600px;
-  padding: 25px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  align-items: center;
+  gap: 0.5rem;
+  
+  padding: 2rem;
   background-color: var(--color-bg);
   box-shadow: 10px 10px 10px var(--glow), -10px -10px 10px var(--glow);
   border-radius: 12px;
-  overflow: hidden;
 }
-
-@media (max-width: 1200px) {
-  .regqurious-main-core {
-    transform: scale(0.7);
-  }
-}
-
-@media (max-width: 1000px) {
-  .regqurious-main-core {
-    transform: scale(0.6);
-  }
-}
-
-@media (max-width: 800px) {
-  .regqurious-main-core {
-    transform: scale(0.5);
-  }
-}
-
-@media (max-width: 600px) {
-  .regqurious-main-core {
-    transform: scale(0.4);
-  }
-}
-
-@media (max-width: 440px) {
-  .regqurious-main-core {
-    transform: scale(0.3);
-  }
-}
-
-@media (max-width: 350px) {
-  .regqurious-main-core {
-    transform: scale(0.28);
-  }
-}
-
-@media (max-width: 330px) {
-  .regqurious-main-core {
-    transform: scale(0.25);
-  }
-}
-
-@media (max-width: 300px) {
-  .regqurious-main-core {
-    transform: scale(0.20);
-  }
-}
-
-
-.regqurious-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 600px;
-  height: 100%;
-  padding-bottom: 30px;
-  background-color: var(--color-bg);
-  transition: 1.25s;
-}
-
-.regqurious-container2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 600px;
-  height: 100%;
-  padding: 25px;
-  background-color: var(--color-bg);
-  transition: 1.25s;
-}
-
-
-
-
-
-.regqurious-container3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 600px;
-  height: 100%;
-  padding: 25px;
-  background-color: var(--color-bg);
-  transition: 1.25s;
-}
-
-.regqurious-form {
+.regqurious-main-vertical{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-
-
+  
+}
+.regqurious-heading-text{
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  text-align: center;
+  
+  
+  
 }
 
-.regqurious-form__icon {
-  object-fit: contain;
-  width: 30px;
-  margin: 0 5px;
-  opacity: 1;
-  transition: 0.15s;
-
+.regqurious-input-fields{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.regqurious-userimg{
+  width: 150px;
+  height: 150px;
 }
 
-.regqurious-form__icon:hover {
-  opacity: 0.5;
-  transition: 0.15s;
-  cursor: pointer;
-}
 
 .regqurious-form__input {
   width: 350px;
-  height: 40px;
+  height: auto;
+  min-height: 40px;
   margin: 4px 0;
   padding-left: 25px;
   font-size: 13px;
@@ -157,7 +66,204 @@
   font-family: var(--font-family-montserrat);
   background-color: var(--color-bg);
   transition: 0.25s ease;
-  color: white;
+  color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 4px var(--glow), inset -2px -2px 4px var(--glow);
+}
+
+.regqurious-form__input:focus {
+  box-shadow: inset 4px 4px 4px var(--glow-2), inset -4px -4px 4px var(--glow-2);
+}
+.regqurious-button-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+.regqurious-cssbuttons-io-button {
+  background: var(--color-midnightblue);
+  color: var(--color-white);
+  font-family: inherit;
+  padding: 0.35em;
+  margin-top: 30px;
+  padding-left: 1.2em;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--font-family-montserrat);
+  border-radius: 25px;
+  border: none;
+  
+  display: flex;
+  
+  align-items: center;
+  
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.regqurious-icon {
+  background: var(--color-white);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 25px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color-iobutton);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.regqurious-cssbuttons-io-button:hover .regqurious-icon {
+  width: calc(100% - 0.6em);
+}
+
+.regqurious-cssbuttons-io-button .regqurious-icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--color-iobutton);
+}
+
+.regqurious-cssbuttons-io-button:hover .regqurious-icon svg {
+  transform: translateX(0.1em);
+}
+
+.regqurious-cssbuttons-io-button:active .regqurious-icon {
+  transform: scale(0.95);
+}
+
+
+
+
+
+.regqurious-cssbuttons-io-button-back {
+  background: var(--color-midnightblue);
+  color: var(--color-white);
+  font-family: inherit;
+  padding: 0.35em;
+  margin-top: 30px;
+  padding-right: 1.2em; /* Change from padding-left to padding-right */
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--font-family-montserrat);
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Change from center to flex-start */
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-left: 3.3em; /* Change from padding-right to padding-left */
+}
+
+.regqurious-icon-back {
+  background: var(--color-white);
+  margin-right: 1em; /* Change from margin-left to margin-right */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 25px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color-iobutton);
+  left: 0.3em; /* Change from right to left */
+  transition: all 0.3s;
+}
+
+.regqurious-cssbuttons-io-button-back .regqurious-icon-back svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--color-iobutton);
+  transform: rotate(180deg);
+}
+
+.regqurious-cssbuttons-io-button-back:hover .regqurious-icon-back {
+  width: calc(100% - 0.6em);
+   /* Revert to the original left position */
+}
+
+.regqurious-cssbuttons-io-button-back:hover .regqurious-icon-back svg {
+  transform: translateX(-0.1em);
+  transform: rotate(180deg);
+}
+
+.regqurious-cssbuttons-io-button-back:active .regqurious-icon-back {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* Mobile first */
+.regqurious-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.regqurious-main-core {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  
+  width: 100%; /* Set maximum width */
+  max-width: 400px; /* Adjust as needed */
+  background-color: var(--color-bg);
+  box-shadow: 10px 10px 10px var(--glow), -10px -10px 10px var(--glow);
+  border-radius: 12px;
+}
+
+/* Common styles */
+.regqurious-heading-text {
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  text-align: center;
+}
+
+.regqurious-input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.regqurious-userimg {
+  width: 150px;
+  height: 150px;
+}
+
+.regqurious-form__input {
+  width: 100%; /* Take full width */
+  min-height: 40px;
+  margin: 4px 0;
+  padding-left: 25px;
+  font-size: 13px;
+  letter-spacing: 0.15px;
+  border: none;
+  outline: none;
+  font-family: var(--font-family-montserrat);
+  background-color: var(--color-bg);
+  transition: 0.25s ease;
+  color: var(--color-white);
   border-radius: 8px;
   box-shadow: inset 2px 2px 4px var(--glow), inset -2px -2px 4px var(--glow);
 }
@@ -166,242 +272,45 @@
   box-shadow: inset 4px 4px 4px var(--glow-2), inset -4px -4px 4px var(--glow-2);
 }
 
-.regqurious-form__span {
-  margin-top: -20px;
-  margin-bottom: 30px;
-  font-family: var(--font-family-montserrat);
-  color: white;
-}
-
-.regqurious-form__link {
-  color: white;
-  font-size: 15px;
-  font-family: var(--font-family-montserrat);
-  margin-top: 25px;
-  border-bottom: 1px solid var(--glow-2);
-  line-height: 2;
-  cursor: pointer;
-}
-
-.regqurious-form__link:hover {
-
-
-  text-shadow: 0px 0px 15px var(--glow-2);
-
-}
-
-
-
-.regqurious-title {
-  font-size: 34px;
-  font-weight: 700;
-  font-family: var(--font-family-montserrat);
-  line-height: 3;
-  color: white;
-}
-
-.regqurious-description {
-  font-size: 14px;
-  font-family: var(--font-family-montserrat);
-  letter-spacing: 0.25px;
-  text-align: center;
-  line-height: 1.6;
-}
-
-
-
-/**/
-.regqurious-a-container {
-  z-index: 100;
-  left: calc(100% - 800px);
-}
-
-.regqurious-b-container {
-  left: calc(100% - 800px);
-  z-index: 0;
-}
-
-.regqurious-b-container2 {
-  left: calc(100% - 800px);
-  z-index: 0;
-}
-
-.regqurious-b-container3 {
-  left: calc(100% - 800px);
-  z-index: 0;
-}
-
-.regqurious-switch {
+.regqurious-button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 400px;
-  padding: 50px;
-  z-index: 200;
-  transition: 1.25s;
-  background-color: var(--color-bg);
-  overflow: hidden;
-  box-shadow: 4px 4px 10px var(--glow), -4px -4px 10px var(--glow);
-}
-
-.regqurious-switch__circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: var(--button);
-  box-shadow: inset 8px 8px 12px var(--glow-2), inset -8px -8px 12px var(--glow-2);
-  bottom: -60%;
-  left: -60%;
-  transition: 1.25s;
-}
-
-.regqurious-button {
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  margin-top: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--font-family-montserrat);
-  letter-spacing: 1.15px;
-  background-color: var(--color-bg);
-  color: white;
-  box-shadow: 8px 8px 16px var(--glow), -8px -8px 16px var(--glow);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.regqurious-button:hover {
-  box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
-  transform: scale(0.985);
-  transition: 0.25s;
-}
-
-.regqurious-button:active,
-.regqurious-button:focus {
-  box-shadow: 2px 2px 6px var(--glow-2), -2px -2px 6px var(--glow-2);
-  transform: scale(0.97);
-  transition: 0.25s;
-}
-
-.regqurious-switch__circle--t {
-  top: -30%;
-  left: 90%;
-  width: 300px;
-  height: 300px;
-}
-
-.regqurious-switch__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  position: absolute;
-  width: 400px;
-  padding: 50px 55px;
-  transition: 1.25s;
+  align-items: center;
+  gap: 1rem;
+  width: 100%; /* Take full width */
 }
 
-.regqurious-switch__button {
-  cursor: pointer;
-  box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
+.regqurious-cssbuttons-io-button,
+.regqurious-cssbuttons-io-button-back {
+  /* Rest of your button styles remain unchanged */
+  width: 100%; /* Take full width */
 }
 
-.regqurious-switch__button:hover {
-  box-shadow: 6px 6px 10px var(--glow), -6px -6px 10px var(--glow);
-  transform: scale(0.985);
-  transition: 0.25s;
+.regqurious-icon,
+.regqurious-icon-back {
+  /* Rest of your icon styles remain unchanged */
+  justify-content: center;
+  /* For horizontal alignment of icons within buttons */
 }
 
-.regqurious-switch__button:active,
-.switch__button:focus {
-  box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
-  transform: scale(0.97);
-  transition: 0.25s;
 }
 
-.regqurious-switch__description {
-  color: white;
-}
-
-.regqurious-button {
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  margin-top: 40px;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--font-family-montserrat);
-  letter-spacing: 1.15px;
-  background-color: var(--color-bg);
-  color: white;
-  box-shadow: 8px 8px 16px var(--glow), -8px -8px 16px var(--glow);
-  border: none;
-  outline: none;
-}
-
-.regqurious-button:hover {
-  box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);
-  transform: scale(0.985);
-  transition: 0.25s;
-}
-
-.regqurious-button:active,
-.regqurious-button:focus {
-  box-shadow: 2px 2px 6px var(--glow-2), -2px -2px 6px var(--glow-2);
-  transform: scale(0.97);
-  transition: 0.25s;
-}
-
-.regqurious-is-gx1 {
-  animation: test-is-gx 2s;
-}
-
-.regqurious-is-gx2 {
-  animation: test-is-gx 1s;
-}
-
-.regqurious-is-gx3 {
-  animation: test-is-gx 1s;
-}
-
-@keyframes test-is-gx {
-
-  from {
 
 
-    opacity: 0%;
-
+@media (max-width: 400px) {
+  .regqurious-heading-text{
+    scale: 0.7;
   }
-
-
-
+  .regqurious-main-core{
+    padding-left: 20px;
+  }
+  
 }
 
-
-/**/
-
-
-
-
-
-.regqurious-ellipse-img {
-  position: relative;
-  width: 150px;
-  height: fit-content;
-  border-radius: 100%;
-}
-
-.regqurious-ellipse {
-  padding-bottom: 0.5rem;
-  margin-top: -1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 350px) {
+  
+  .regqurious-main-core{
+    padding-left: 10px;
+  }
+  
 }

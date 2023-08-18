@@ -87,87 +87,104 @@ const Regqurious = () => {
 
   return (
     <div className='regqurious-main'>
-      <div class="regqurious-main-core">
-        {Screen1 && (
-          <div class="regqurious-container regqurious-b-container regqurious-is-gx1" id="b-container">
-
-            <form class="regqurious-form" id="b-form" method="" action="" onSubmit={next1}>
-
-              <h2 class="regqurious-form_title regqurious-title">Qurious Registrations</h2>
-              <span class="regqurious-form__span">or use your email account</span>
-
-              <div className='regqurious-ellipse' onClick={handleClick} style={{ cursor: "pointer" }}>
-                {image ? (<img src={URL.createObjectURL(image)} alt="" className="regqurious-ellipse-img" />) : (<img src={userlogo} alt="" className="regqurious-ellipse-img" />)}
-                <input id="image-upload-input" type="file" onChange={handleImageChange} ref={hiddenFileInput} style={{ display: "none" }} />
-
-
-              </div>
-
-              <input class="regqurious-form__input" id='first_name' type="text" placeholder="First Name" required/>
-              <input class="regqurious-form__input" id='last_name' type="text" placeholder="Last Name" required/>
-              <input class="regqurious-form__input" id='user_email' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Phone" required/>
-
-              <button class="regqurious-form__button regqurious-button regqurious-submit" >NEXT</button>
-            </form>
-            <div class="regqurious-switch__circle"></div>
-            <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>
+      
+      {Screen1 && (
+        <div class="regqurious-main-core">
+          
+          <div className='regqurious-main-vertical'>
+            <div className='regqurious-heading'>
+              <h1 className='regqurious-heading-text'>QURIOUS REGISTRATIONS</h1>
+            </div>
+            <div className='regqurious-userimg-container'>
+              <img className="regqurious-userimg"src={userlogo}/>
+            </div>
+            <div className='regqurious-input-fields'>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+            </div>
+            <div className='regqurious-button-container'>
+              
+              <button class="regqurious-cssbuttons-io-button" onClick={next1}> NEXT
+                <div class="regqurious-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                </div>
+              </button>
+              
+            </div>
           </div>
-        )}
+          
+        </div>
+      )}
+      {Screen2 && (
+        <div class="regqurious-main-core">
+        <div className='regqurious-heading'>
+          <h1 className='regqurious-heading-text'>QURIOUS REGISTRATIONS</h1>
+          <h2 className='regqurious-heading-text'>PAGE 2</h2>
+        </div>
+        <div className='regqurious-userimg-container'>
+          <img className="regqurious-userimg"src={userlogo}/>
+        </div>
+        <div className='regqurious-input-fields'>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+        </div>
+        <div className='regqurious-button-container'>
+          <button class="regqurious-cssbuttons-io-button-back" onClick={back1}> BACK
+            <div class="regqurious-icon-back">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          <button class="regqurious-cssbuttons-io-button" onClick={next2}> NEXT
+            <div class="regqurious-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          
+        </div>
+        </div>
+      )}
+      {Screen3 && (
+        <div class="regqurious-main-core">
+         
+        <div className='regqurious-heading'>
+          <h1 className='regqurious-heading-text'>QURIOUS REGISTRATIONS</h1>
+          
+        </div>
+        <div className='regqurious-userimg-container'>
+          <img className="regqurious-userimg"src={userlogo}/>
+        </div>
+        <div className='regqurious-input-fields'>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+          <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
+        </div>
+        <div className='regqurious-button-container'>
+          <button class="regqurious-cssbuttons-io-button-back" onClick={back2}> BACK
+            <div class="regqurious-icon-back">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          <button class="regqurious-cssbuttons-io-button" onClick={next2}> SUBMIT
+            <div class="regqurious-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+            </div>
+          </button>
+          
+        </div>
+        </div>
+      )}
+      
+      
+
+        
 
 
-        {Screen2 && (
-          <div class="regqurious-container2 regqurious-b-container2 regqurious-is-gx2" id="b-container">
-
-            <form class="regqurious-form" id="b-form" method="" action=""onSubmit={next2}>
-
-              <h2 class="regqurious-form_title regqurious-title">Page 2</h2>
-
-
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-
-
-
-
-              <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={back1}>BACK</button>
-              <button class="regqurious-form__button regqurious-button regqurious-submit" >NEXT</button>
-            </form>
-            <div class="regqurious-switch__circle"></div>
-            <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>
-          </div>
-        )}
-
-        {Screen3 && (
-          <div class="regqurious-container3 regqurious-b-container3 regqurious-is-gx3" id="b-container">
-
-            <form class="regqurious-form" id="b-form" method="" action="" onSubmit={() => { navigate("/qurious"); }}>
-
-              <h2 class="regqurious-form_title regqurious-title">Page 3</h2>
-
-
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-              <input class="regqurious-form__input" id='user_phone' type="text" placeholder="Email" required/>
-
-
-
-
-              <button class="regqurious-form__button regqurious-button regqurious-submit" onClick={back2}>BACK</button>
-              <button class="regqurious-form__button regqurious-button regqurious-submit" >SUBMIT</button>
-            </form>
-            <div class="regqurious-switch__circle"></div>
-            <div class="regqurious-switch__circle regqurious-switch__circle--t"></div>
-          </div>
-        )}
-
-
-      </div>
+      
     </div>
   )
 }

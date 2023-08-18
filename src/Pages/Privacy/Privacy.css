@@ -10,7 +10,7 @@
     font-weight: 600;
     font-size: 48px;
     text-transform: capitalize;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 2rem;
     text-align: left;
     
@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
     margin-right: 5rem;
     
 }

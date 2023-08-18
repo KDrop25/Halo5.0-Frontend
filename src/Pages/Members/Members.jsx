@@ -1,193 +1,191 @@
 import React from 'react';
 import './Members.css';
-import discordlogo from '../../assets/icons8-discord.svg'
-import youtubelogo from '../../assets/icons8-youtube.svg'
-import githublogo from '../../assets/icons8-github.svg'
-import twitterlogo from '../../assets/icons8-twitter.svg'
-import instagramlogo from '../../assets/icons8-instagram.svg'
-import halologo from '../../assets/Halolegion logo Trans 500by500.png'
+import userimg from '../../assets/user-img.jpg';
+import {BsInstagram,BsFacebook,BsYoutube,BsTwitter,BsTwitch,BsGithub} from "react-icons/bs"
 
 
-import userimg from '../../assets/user-img.jpg'
-const About = () => {
-  return (
-    <div className='members-main'>
-        <div class="members-bg-logo">
-          <img class="members-bg-halolegion-logo" alt="logo" src={halologo}/>
-        </div>
-        <div className='members-heading'>
-            <h1>Team Members</h1>
-            <p>lorem ipsum</p>>
-        </div>
-        <div className='members-column'>
-            <div className='members0-row'>
-                    <div className="member0" >
-                        <div className='member0-ellipse'>
-                            <img className="member0-ellipse-img" alt="" src={userimg} />
+
+const Members = () => {
+    return (
+        <div className='members-main'>
+            <div className='members-core'>
+                <div className='members-heading'>
+                    <h1 className='members-heading-text'>Team Members</h1>
+                    <h2 className='members-heading-text'>lorem ipsum</h2>
+                </div>
+                <div className='members-cards-row'>
+                    <div className='members-horizontal-card'>
+                        <div className='members-horizontal-card-left'>
+                            <img className="members-horizontal-card-userimage" alt="" src={userimg}/>
                             
-                            <div className='member0-info'>
-                                <h1 className="director0">Director</h1>
-                                <h1 className="members-name-text0">Karan Agrawal</h1>
-                                <br></br>
-                                <h2 className='member0-about'>hemlos,this is karan agrawal here the director and founder of halocon </h2>
-                                <div class="members-form__icons">
-                                    <img class="members-form__icon" src={discordlogo} alt=''/>
-                                    <img class="members-form__icon" src={youtubelogo} alt=''/>
-                                    <img class="members-form__icon" src={githublogo} alt=''/>
-                                    <img class="members-form__icon" src={twitterlogo} alt=''/>
-                                    <img class="members-form__icon" src={instagramlogo} alt=''/>
-                                    
-                                </div>
+                        </div>
+                        <div className='members-horizontal-card-right'>
+                            <h1 className='members-heading-text'>Team Members</h1>
+                            <h2 className='members-heading-text'>lorem ipsum</h2>
+                            <p>lorem ipsum.lorem ipsum.lorem ipsum.lorem ipsum. lorem ipsum.lorem ipsum.lorem ipsum.lorem ipsum.</p>
+                            <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                             </div>
                         </div>
-                        
                     </div>
-                    
-                    
-            </div>
-            <div className='members-row-container'>
-                <div className='members-row'>
-                    
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
+                </div>
+                <div className='members-cards-row'>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg} />
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
                         </div>
-                    </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
-                        </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
+                        </div>
+                    </div>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
+                        </div>
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='members-row-container'>         
-                <div className='members-row'>
-                    
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
+                <div className='members-cards-row'>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
                         </div>
-                    </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
-                        </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
-                    <div className="member1" >
-                        <div className='member1-ellipse'>
-                            <img className="member1-ellipse-img" alt="" src={userimg}/>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
                         </div>
-                        <p className="director">Director</p>
-                        <p className="members-name-text">Karan Agrawal</p>
-                        <div class="members-form__icons">
-                            <img class="members-form__icon" src={discordlogo} alt=''/>
-                            <img class="members-form__icon" src={youtubelogo} alt=''/>
-                            <img class="members-form__icon" src={githublogo} alt=''/>
-                            <img class="members-form__icon" src={twitterlogo} alt=''/>
-                            <img class="members-form__icon" src={instagramlogo} alt=''/>
-                            
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
+                        </div>
+                    </div>
+                    <div className='members-vertical-card'>
+                        <div className='members-vertical-card-top'>
+                            <img className="members-vertical-card-userimage" alt="" src={userimg}/>
+                        </div>
+                        <div className='members-vertical-card-bottom'>
+                            <h1 className='members-vertical-name-text'>Karan Agrawal</h1>
+                            <h2 className='members-vertical-designation-text'>lorem ipsum</h2>
+                            <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
+                        </div>
+                        <div className='members-social-icons'>
+                                    <BsInstagram/>
+                                    <BsFacebook/>
+                                    <BsYoutube/>
+                                    <BsTwitter/>
+                                    <BsGithub/>
+                                    <BsTwitch/>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-    </div>
-  )
+    );
 }
 
-export default About
-
-
-
-
-
-
-
-      
-    
-    
+export default Members;

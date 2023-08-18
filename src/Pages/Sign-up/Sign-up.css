@@ -74,16 +74,17 @@
     }
   }
 .valid{
-  color: white;
+  color: var(--color-white);
 }
 .invalid{
-  color: white;
+  color: var(--color-white);
   padding-left: 0.5rem;
   
 }
 .instructions,.errmsg{
   display: flex;
-  color: white;
+  color: var(--color-white);
+  font-size: small;
 
 }
 .offscreen,.hide{
@@ -200,7 +201,7 @@ outline: none;
 font-family: var(--font-family-montserrat);
 background-color: var(--color-bg);
 transition: 0.25s ease;
-color: white;
+color: var(--color-white);
 border-radius: 8px;
 box-shadow: inset 2px 2px 4px var(--glow), inset -2px -2px 4px var(--glow);
 }
@@ -211,16 +212,16 @@ box-shadow: inset 4px 4px 4px var(--glow-2), inset -4px -4px 4px var(--glow-2);
 margin-top: 15px;
 margin-bottom: 12px;
 font-family: var(--font-family-montserrat);
-color: white;
+color: var(--color-white);
 }
 .signup-form__span1 {
   margin-top: 0px;
   margin-bottom: 10px;
   font-family: var(--font-family-montserrat);
-  color: white;
+  color: var(--color-white);
   }
 .signup-form__link {
-color: white;
+color: var(--color-white);
 font-size: 15px;
 font-family: var(--font-family-montserrat);
 margin-top: 25px;
@@ -229,7 +230,7 @@ line-height: 2;
 cursor: pointer;
 }
 .signup-form__login{
-  color: white;
+  color: var(--color-white);
   font-size: 15px;
   font-family: var(--font-family-montserrat);
   margin-top: 15px;
@@ -249,8 +250,8 @@ text-shadow: 0px 0px 15px var(--glow-2);
 font-size: 34px;
 font-weight: 700;
 font-family: var(--font-family-montserrat);
-line-height: 3;
-color: white;
+line-height: 2;
+color: var(--color-white);
 }
 
 .signup-description {
@@ -334,7 +335,7 @@ transform: scale(0.97);
 transition: 0.25s;
 }
 .signup-switch__description{
-  color: white;
+  color: var(--color-white);
 }
 .signup-button {
   width: 180px;
@@ -346,7 +347,7 @@ transition: 0.25s;
   font-family: var(--font-family-montserrat);
   letter-spacing: 1.15px;
   background-color: var(--color-bg);
-  color: white;
+  color: var(--color-white);
   box-shadow: 8px 8px 16px var(--glow), -8px -8px 16px var(--glow);
   border: none;
   outline: none;
@@ -537,7 +538,7 @@ transition: 0.25s;
   font-family: var(--font-family-montserrat);
   background-color: var(--color-bg);
   transition: 0.25s ease;
-  color: white;
+  color: var(--color-white);
   border-radius: 8px;
   box-shadow: inset 2px 2px 4px var(--glow), inset -2px -2px 4px var(--glow);
 }
@@ -550,11 +551,11 @@ transition: 0.25s;
   margin-top: 30px;
   margin-bottom: 12px;
   font-family: var(--font-family-montserrat);
-  color: white;
+  color: var(--color-white);
 }
 
 .signup-success-form__link {
-  color: white;
+  color: var(--color-white);
   font-size: 15px;
   font-family: var(--font-family-montserrat);
   margin-top: 25px;
@@ -563,7 +564,7 @@ transition: 0.25s;
   cursor: pointer;
 }
 .signup-success-form__login{
-  color: white;
+  color: var(--color-white);
   font-size: 15px;
   font-family: var(--font-family-montserrat);
   margin-top: 15px;
@@ -586,7 +587,7 @@ transition: 0.25s;
   font-weight: 700;
   font-family: var(--font-family-montserrat);
   line-height: 3;
-  color: white;
+  color: var(--color-white);
 }
 
 .signup-success-description {
@@ -679,7 +680,7 @@ transition: 0.25s;
 }
 
 .signup-success-switch__description {
-  color: white;
+  color: var(--color-white);
 }
 
 .signup-success-button {
@@ -692,7 +693,7 @@ transition: 0.25s;
   font-family: var(--font-family-montserrat);
   letter-spacing: 1.15px;
   background-color: var(--color-bg);
-  color: white;
+  color: var(--color-white);
   box-shadow: 8px 8px 16px var(--glow), -8px -8px 16px var(--glow);
   border: none;
   outline: none;
@@ -723,7 +724,7 @@ transition: 0.25s;
   }
   
   .signup-success-switch__description {
-    color: white;
+    color: var(--color-white);
   }
 .signup-button:hover {
   box-shadow: 6px 6px 10px var(--glow-2), -6px -6px 10px var(--glow-2);

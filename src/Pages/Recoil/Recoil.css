@@ -11,17 +11,18 @@
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white)
 
 
 
 }
 
 
-.main-recoil {
-    padding: 2rem 0rem;
-
-
+.recoil-bottom {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -41,25 +42,61 @@
     display: flex;
     justify-content: center;
     padding: 1rem 0rem;
+    z-index: -9;
 }
 
-.recoil {
-    border-radius: var(--br-3xs);
-    background-color: var(--member-plaque);
-    border: 1px solid var(--glow);
-    height: 200px;
-    width: 590px;
+
+
+.recoil-cards-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    
+  }
+  .recoil-heading-text{
+    font-family: var(--font-family-montserrat);
+    font-weight: 600;
     text-align: center;
-    align-self: center;
-
-
-
-}
-
-
+  }
+  .recoil-horizontal-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 800px;
+    height: 250px;
+    background-color: var(--member-plaque);
+    
+    border-radius: 15px;
+  }
+  
+  .recoil-horizontal-card-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .recoil-horizontal-card-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .recoil-horizontal-card-userimage{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
 .recoil-info {
     position: relative;
     align-self: center;
+    
 }
 
 .recoil-ellipse-img {
@@ -93,7 +130,13 @@
     font-weight: 500;
     color: var(--color-dimgray-200);
 }
-
+.recoil-main{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+}
 
 .recoil-event-button {
     border-radius: 5px;
@@ -101,13 +144,14 @@
     width: 190px;
     height: 50px;
     cursor: pointer;
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 0px;
     font-size: medium;
     font-weight: 600;
     font-family: var(--font-family-montserrat);
     border: 0px;
     text-align: center;
+    
 }
 
 .recoil-event-button:hover {
@@ -135,9 +179,63 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 var(--black-drop-shadow);
     max-width: 320px;
     margin: auto 1rem;
     text-align: center;
     font-family: arial;
 }
+
+
+
+@media (max-width: 768px) {
+    .recoil-cards-row {
+      flex-direction: column; /* Stack the cards vertically on small screens */
+    }
+  
+    .recoil-horizontal-card {
+      width: 100%; /* Make the horizontal card take full width on small screens */
+      height: auto; /* Allow height to adjust based on content */
+      padding: 1rem;
+    }
+  
+    .recoil-horizontal-card-left,
+    .recoil-horizontal-card-right {
+      width: 100%; /* Make the card sections take full width on small screens */
+      text-align: center;
+    }
+  
+    .recoil-horizontal-card-userimage {
+      width: 200px;
+      height: 200px; /* Reduce image size on small screens */
+    }
+  
+    .recoil-event-button {
+      width: 100%; /* Make the button take full width on small screens */
+    }
+  
+    .recoil-info p {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  
+    /* Adjust other styles as needed for responsiveness */
+  }
+
+
+
+
+@media (max-width: 400px) {
+.recoil-cards-row{
+    scale: 0.9;
+}
+.recoil-horizontal-card-userimage {
+    width: 150px;
+    height: 150px; /* Reduce image size on small screens */
+  }
+}
+@media (max-width: 350px) {
+    .recoil-cards-row{
+        scale: 0.8;
+    }
+    }
+  

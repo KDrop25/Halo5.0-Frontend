@@ -1,18 +1,28 @@
-.gpt3__navbar {
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    
+
+
+}
+.navbar-core{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    
 }
-
-.gpt3__navbar-links {
-    flex: 1;
+.navbar-links {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
-
+.navbar-actions{
+    display: flex;
+}
 .navbar-user-profile-logo{
     height: fit-content;
     width: 60px;
@@ -34,7 +44,7 @@
 }
 
 .navbar-links_logo p {
-    color: #fff;
+    color: var(--font-color);
     font-weight: 500;
     font-family: var(--font-family-montserrat);
     font-size: 18px;
@@ -50,12 +60,12 @@
 
 
 
-.gpt3__navbar-links_container {
+.navbar-links_container {
     display: flex;
     flex-direction: row;
 }
 
-.gpt3__navbar-sign {
+.navbar-sign {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -63,10 +73,10 @@
 }
 
 
-.gpt3__navbar-links_container p,
-.gpt3__navbar-sign p,
-.gpt3__navbar-menu_container p {
-    color: #fff;
+.navbar-links_container p,
+.navbar-sign p,
+.navbar-menu_container p {
+    color: var(--font-color);
     font-family: var(--font-family-manrope);
     font-weight: 500;
     font-size: 18px;
@@ -77,12 +87,12 @@
     cursor: pointer;
 }
 
-.gpt3__navbar-sign button,
-.gpt3__navbar-menu_container button,
-.gpt3__navbar-menu_container-link-sign button {
+.navbar-sign button,
+.navbar-menu_container button,
+.navbar-menu_container-link-sign button {
 
     padding: 0.5rem 0.5rem;
-    color: #fff;
+    color: var(--font-color);
     background: var(--color-midnightblue);
     font-family: var(--font-family-manrope);
     font-weight: 500;
@@ -94,24 +104,25 @@
     border-radius: 5px;
 }
 
-.gpt3__navbar-menu {
+.navbar-menu {
     margin-left: 1rem;
     display: none;
     position: relative;
 }
 
-.gpt3__navbar-menu svg {
+.navbar-menu svg {
     cursor: pointer;
 }
 
-.gpt3__navbar-menu_container {
+.navbar-menu_container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-
+    z-index: 99999999999;
     text-align: end;
-    background: var(--color-menu);
+    background-color: var(--color-menu);
+    
     padding-right: 1rem;
     padding-bottom: 1rem;
     position: absolute;
@@ -125,35 +136,35 @@
 .hidden{
     display:none;
 }
-.gpt3__navbar-menu_container p {
+.navbar-menu_container p {
     margin: 0.1rem 0;
 }
 
-.gpt3__navbar-menu_container-links-sign {
+.navbar-menu_container-links-sign {
     display: none;
 }
 
 
 @media screen and (max-width: 1050px) {
-    .gpt3__navbar-links_container {
+    .navbar-links_container {
         display: none;
     }
 
-    .gpt3__navbar-menu {
+    .navbar-menu {
         display: flex;
     }
 
-    .gpt3__navbar-menu_container-link-sign {
+    .navbar-menu_container-link-sign {
         display: none;
     }
 }
 
 @media screen and (max-width: 870px) {
-    .gpt3__navbar {
+    .navbar {
         padding: 1rem 1rem;
     }
 
-    .gpt3__navbar-menu_container-link-sign {
+    .navbar-menu_container-link-sign {
         display: none;
     }
 }
@@ -163,37 +174,23 @@
 @media screen and (max-width: 550px) {
 
 
-    .gpt3__navbar-sign {
+    .navbar-sign {
         display: none;
     }
 
-    .gpt3__navbar-menu_container {
+    .navbar-menu_container {
         top: 10px;
     }
 
 
-    .gpt3__navbar-menu_container-link-sign {
+    .navbar-menu_container-link-sign {
         display: block;
     }
 
 }
 
 
-@media screen and (max-width: 380px) {
-    .gpt3__navbar {
-        transform: scale(0.7);
 
-    }
-
-}
-
-@media screen and (max-width: 300px) {
-    .gpt3__navbar {
-        transform: scale(0.7);
-        margin-right: 10rem;
-    }
-
-}
 
 
 
@@ -319,3 +316,30 @@
     transform: scale(0.97);
     transition: 0.25s;
 }
+
+
+/* ... previous styles ... */
+
+/* Adjust mobile menu button */
+
+
+/* Spacing and padding adjustments for smaller screens */
+@media screen and (max-width: 500px) {
+    
+    .navbar-user-profile-logo {
+        width: 40px; /* Adjust profile logo size */
+    }
+
+    
+
+    
+}
+
+/* Hide certain elements on smaller screens */
+@media screen and (max-width: 380px) {
+    .navbar-user-profile-logo {
+        width: 40px; /* Adjust profile logo size */
+    }
+}
+
+/* ... other media queries and styles ... */

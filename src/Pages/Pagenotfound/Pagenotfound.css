@@ -2,8 +2,8 @@
 
 
 /* SELECTED TEXT */
-::selection {  color: #FFFFFF; text-shadow: 0; }
-::-moz-selection { color: #FFFFFF; }
+::selection {  color: var(--color-white); text-shadow: 0; }
+::-moz-selection { color: var(--color-white); }
 
 html {
     font-size: 18px;font-size: 1.13rem;
@@ -16,9 +16,9 @@ html, input { font-family: "arvo", "Helvetica Neue", Helvetica, Arial, sans-seri
 
 
 body {                
-    background: #4A575A;
+    
     margin: auto;
-    color: #fff;
+    color: var(--color-white);
     }
 
 
@@ -42,7 +42,7 @@ a {
         }
 
         a, a:visited, a:active {
-            color: #fff;
+            color: var(--color-white);
             text-decoration: none;
             }
 
@@ -68,7 +68,7 @@ a {
         font-weight: 400;
         margin: 0;
         padding: 4px 0 10px;
-        color: #aaa;
+        
         }
 
     h3 {
@@ -92,10 +92,10 @@ a {
             display: block;
             margin-top: 30px;
             padding: 20px;
-            background: #16A085; 
+            
             }
     
-                                    
+
     .copyright {
         font-size: 12px;
         text-align: center;
@@ -154,14 +154,8 @@ a {
 }  
 
 @media only screen and (max-width : 568px) {
-    body {
-      background: #16A085;
-      }            
-    .warning a { 
-      background: #037c63; 
-      }        
     h2 {
-      color: #fff;
+      color: var(--color-white);
       }                  
 }
 
@@ -192,3 +186,70 @@ a {
       }        
       
 }
+
+
+
+
+/* Existing CSS rules before media queries */
+
+/* Media queries for responsiveness */
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      margin: 0 auto 40px;
+    }
+  
+    .warning {
+      padding: 0 10px 8px;
+    }
+  }
+  
+  /* Mobile devices */
+  @media only screen and (max-width: 480px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .unicorn {
+      height: 200px;
+      margin: 20px 0;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    .warning p {
+      font-size: 12px;
+    }
+  
+    .warning a {
+      margin-top: 15px;
+      padding: 15px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Smaller mobile devices */
+  @media only screen and (max-width: 320px) {
+    .container {
+      max-width: 95%;
+    }
+  
+    h2 {
+      font-size: 14px;
+    }
+  
+    .warning p {
+      font-size: 10px;
+    }
+  
+    .warning a {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+  

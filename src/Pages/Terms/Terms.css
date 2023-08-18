@@ -10,7 +10,7 @@
     font-weight: 600;
     font-size: 48px;
     text-transform: capitalize;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 2rem;
     text-align: left;
     
@@ -24,14 +24,14 @@
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
     margin-right: 5rem;
     
 }
 
 
 .main-terms{
-    padding: 5rem 5rem;
+    padding: 3rem;
     
 }
 
@@ -49,4 +49,24 @@
     height: fit-content;
     mix-blend-mode: overlay;
     position:absolute
+}
+
+
+@media (max-width:400px){
+    
+    .main-terms{
+    text-align: center;
+    padding: 3rem;
+    }
+    .terms-heading p{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:350px){
+    
+    .main-terms{
+    padding: 1rem;
+    }
 }

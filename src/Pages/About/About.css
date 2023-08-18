@@ -8,7 +8,7 @@
     font-weight: 600;
     font-size: 48px;
     text-transform: capitalize;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 2rem;
     text-align: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     font-family: var(--font-family-montserrat);
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
     text-align: center
     
 }
@@ -30,11 +30,11 @@
     font-family: var(--font-family-montserrat);
     font-weight: 100;
     font-size: 20px;
-    color: white;
+    color: var(--color-white);
     text-align: center
 }
 .about-info2{
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 .about-bg-logo {
@@ -57,14 +57,17 @@
 
 
 .main-about{
-    
-    
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
     
 }
 .main-about-core{
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 .about-bg-logo {
@@ -76,11 +79,7 @@
 }
 
 
-.bg-halolegion-logo {
-    width: 216px;
-    mix-blend-mode: overlay;
-    position:absolute
-}
+
 @media screen and (max-width: 1000px) {
     .about-info{
         display: block;
@@ -91,8 +90,7 @@
 
 @media screen and (max-width: 450px) {
     .main-about-core{
-        padding: 2rem;
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     
     
@@ -100,17 +98,10 @@
 
 @media screen and (max-width: 350px) {
     .main-about-core{
-        padding: 0.5rem;
-        transform: scale(0.7);
+        
+        transform: scale(0.8);
     }
     
     
 }
 
-@media screen and (max-width: 300px) {
-    .main-about-core{
-        padding: 0rem;
-    }
-    
-    
-}

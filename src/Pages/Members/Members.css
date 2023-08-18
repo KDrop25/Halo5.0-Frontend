@@ -1,271 +1,144 @@
-.members-column {
-    display: block;
-}
-.members-column-container{
-  display: flex;
-  justify-content: center;
-}
 .members-main{
-    padding-bottom: 2rem;
-    
-    justify-content: center;
-}
-.members-row-container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
   
   
 }
-.members-row{
-    display: flex;
-    justify-content: center;
-    
-}
-.members0-row{
+.members-core{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  gap: 15px;
   
-  padding: 1rem 0rem;
-}
-.member0 {
-    border-radius: var(--br-3xs);
-    background-color: var(--member-plaque);
-    border: 1px solid var(--glow);
-    height: fit-content;
-    width: 590px;
-    text-align: center;
-    align-self: center;
-    
-    
-    
-}
-.members-form__icons{
-  padding: 15px 0;
-}
-.members-form__icon {
-  object-fit: contain;
-  width: 30px;
-  margin: 0 5px;
-  opacity: 1;
-  transition: 0.15s;
   
 }
-.members-form__icon:hover {
-  opacity: 0.5;
-  transition: 0.15s;
-  cursor: pointer;
-}
-.member0-info{
-    position: relative;
-    align-self: center;
-}
-
-.member0-ellipse-img {
-    position: relative;
-    width:40% ;
-    height: 30%;
-    border-radius:100%;
-}
-.member0-ellipse{
-    padding: 1rem 1rem;
-    
-    display: flex;
-    justify-content: space-around;
-}
-.members-bg-logo {
+.members-cards-row{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  position: relative;
-  
-  
-  
+  gap: 15px;
 }
-
-
-.members-bg-halolegion-logo {
-  width: 90%;
-  height: fit-content;
-  mix-blend-mode: overlay;
-  
-  position:absolute;
-  
-}
-
-.director0,
-.members-name-text0,.member0-about {
-  
-  position: relative;
-  justify-content: center;
-  line-height: 90%;
-  text-transform: capitalize;
-}
-.director0 {
-    font-weight: 500;
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-source-sans-pro);
-    color: white;
-  }
-.members-name-text0 {
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-source-sans-pro);
-    font-weight: 500;
-    color: var(--gg);
-  }
-.member0-about {
-    font-size: 20px;
-    font-family: var(--font-source-sans-pro);
-    font-weight: 500;
-    color: var(--color-dimgray-200);
-  }
-
-
-
-.member1 {
-  border-radius: var(--br-3xs);
-  background-color: var(--member-plaque);
-  border: 1px solid var(--glow);
-  height: fit-content;
-  width: 280px;
+.members-heading-text{
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
   text-align: center;
-  margin: 1rem 1rem;
+}
+.members-horizontal-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 800px;
+  height: 250px;
+  background-color: var(--member-plaque);
+  border-radius: 15px;
+}
+
+.members-horizontal-card-left{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   
+}
+.members-horizontal-card-right{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.members-horizontal-card-userimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.members-social-icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.members-vertical-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  background-color: var(--member-plaque);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.members-vertical-card-userimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.members-verical-card-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  
-  
 }
-.member1-ellipse-img {
-  position: relative;
-  width:90% ;
-  height: 90%;
-  border-radius:100%;
+.members-vertical-card-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.director,
-.members-name-text {
-  align-self: stretch;
-  position: relative;
-  line-height: 100%;
-  text-transform: capitalize;
+.members-vertical-name-text{
+  font-size: xx-large;
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  text-align: center;
 }
-.director {
-  font-weight: 500;
-  font-size: var(--font-size-21xl);
-  font-family: var(--font-source-sans-pro);
-  color: white;
+.members-vertical-info-text{
+  font-size: medium;
 }
-.members-name-text {
-  font-size: var(--font-size-21xl);
-  font-family: var(--font-source-sans-pro);
-  color: var(--gg);
-}
-.member1-ellipse{
-    padding: 1rem 1rem;
-}
-.members-heading{
+
+/* Existing CSS styles */
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .members-horizontal-card {
+    flex-direction: column;
+    width: auto;
+    height: auto;
     text-align: center;
-    justify-content: center;
-    
-}
+  }
 
-.members-heading h1 {
-    font-weight: 500;
-    font-size: 50px;
-    font-family: var(--font-source-sans-pro);
-    color: white;
-}
-.members-heading p {
-    font-weight: 300;
-    font-size: 25px;
-    font-family: var(--font-source-sans-pro);
-    color: white;
-}
+  .members-horizontal-card-left,
+  .members-horizontal-card-right {
+    padding: 1rem;
+  }
 
+  .members-horizontal-card-userimage {
+    width: 150px;
+    height: 150px;
+  }
 
-@media screen and (max-width: 1500px) {
-  .members-main{
-    transform: scale(0.9);
+  .members-vertical-card {
+    width: auto;
+    height: auto;
   }
-  
-  
-}
-@media screen and (max-width: 1200px) {
-  .members-main{
-    transform: scale(0.85);
-  }
-  
-  
-}
 
-@media screen and (max-width: 1050px) {
-  .director{
-      font-size: 30px;
+  .members-vertical-card-userimage {
+    width: 150px;
+    height: 150px;
   }
-  .members-name-text{
-    font-size: 30px;
-  }
-  
-  .members-name-text0{
-    font-size: 30px;
-  }
-  .members-row{
-    display: block;
-  }
-  
-}
-@media screen and (max-width: 800px) {
-  .director{
-      font-size: 40px;
-  }
-  .members-name-text{
-    font-size: 40px;
-  }
-  
-  .members-name-text0{
-    font-size: 30px;
-  }
-  
-  
-  .member1{
-    margin: 2rem 1rem;
-  }
-  .member0-ellipse{
-    display: block;
-  }
-  
-}
-@media screen and (max-width: 650px) {
-  
-  .member0-about{
-    font-size: 15px;
-  }
-  
-  .members-name-text0{
-    font-size: 30px;
-  }
-  .member1{
-    margin: 2rem 0.5rem;
-  }
-  .members-main{
-    transform: scale(0.9);
-  }
-  
-}
 
-
-@media screen and (max-width: 350px) {
-  .members-column{
-    transform: scale(0.9);
-
-  }
-  .members-row-container{
-    transform: scale(0.9);
-  }
-  .member1{
-    margin: 2rem 0.5rem;
-  }
-  .director{
-    font-size: 40px;
-  }
-  .members-name-text{
-    font-size: 40px;
+  .members-verical-card-top {
+    margin-bottom: 1rem;
   }
 }
