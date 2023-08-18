@@ -20,7 +20,6 @@ export { default as Regencode } from './Encode/Reg-Encode';
 export { default as Gallery } from './Gallery/Gallery';
 export { default as Dashboard } from './Dashboard/Dashboard';
 export { default as Profile } from './Profile/Profile';
-export { default as Testing } from './Testing/Testing';
 export { default as ForgotPass } from './ForgotPass/Forgotpass';
 
 

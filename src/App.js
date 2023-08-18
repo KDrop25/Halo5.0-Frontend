@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, About, Members, Events, Schedule, Contact, Signin, Signup, Privacy, Terms, Recoil, Qurious, Encode, Regrecoil, Testing, Regqurious, Regencode, Gallery,Dashboard ,Unauthorised,Pagenotfound,Profile,ForgotPass} from './Pages';
+import { Home, About, Members, Events, Schedule, Contact, Signin, Signup, Privacy, Terms, Recoil, Qurious, Encode, Regrecoil, Regqurious, Regencode, Gallery,Dashboard ,Unauthorised,Pagenotfound,Profile,ForgotPass} from './Pages';
 import Layout from './components/Layout';
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
@@ -28,7 +28,7 @@ const App = () => {
         <Route path='/signup' element={<Signup />} />
         <Route path='/unauthorised' element={<Unauthorised />} />
         <Route path='/pagenotfound' element={<Pagenotfound />} />
-        <Route path='/test' element={<Testing />} />
+        
         
         
         <Route element={<PersistLogin/>}>
