@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function GoogleAnalytics() {
+function GoogleTagManager() {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F9RZWEMYD0';
@@ -19,4 +19,4 @@ function GoogleAnalytics() {
   return null;
 }
 
-export default GoogleAnalytics;
+export default GoogleTagManager;
