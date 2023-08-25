@@ -13,7 +13,6 @@ export const ROLES = {
   'Editor':5000
 }
 
-
 const App = () => {
 
   return (
