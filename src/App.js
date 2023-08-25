@@ -5,20 +5,21 @@ import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import RequireAuth from './hooks/RequireAuth';
 import PersistLogin from './Pages/Sign-in/PersistLogin';
-import GoogleAnalytics from './hooks/googleanalytics';
+import ReactGA from "react-ga";
 
 export const ROLES = {
   'User':10,
   'Admin':10000,
   'Editor':5000
 }
-
+const TRACKING_ID = "UA-283028816-1";
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
 
   return (
     <>
-    <GoogleAnalytics />
+    
     <Routes>
       <Route path="/" element={<Layout />}>
         

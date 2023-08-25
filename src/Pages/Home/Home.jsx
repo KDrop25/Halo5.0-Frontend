@@ -1,11 +1,26 @@
-import React from 'react';
+import {React ,useEffect} from 'react';
 import './Home.css';
 import ellipse from '../../assets/images/ellipse-12.svg';
 import halologo from '../../assets/Halolegion logo Trans 500by500.png';
 import { useNavigate } from 'react-router-dom';
+import ReactGA from "react-ga";
+
+
+
+
+
+
 
 const Home = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  },[]);
+
+
+
+  
+  
 
   return (
     <div className='home-main'>
