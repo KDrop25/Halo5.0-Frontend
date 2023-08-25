@@ -1,4 +1,4 @@
-import React, { useState,useEffect} from 'react';
+import React, { useState ,useRef,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './Dashboard.css';
 import homelogo from '../../assets/images/icons8-home.png';
@@ -6,8 +6,9 @@ import facebooklogo from '../../assets/images/icons8-facebook-400.png';
 import instagramlogo from '../../assets/images/icons8-instagram-500.png';
 import twitterlogo from '../../assets/images/icons8-twitter-400.png';
 import youtubelogo from '../../assets/images/icons8-youtube-480.png';
+import useAnalyticsData from '../../hooks/useAnalyticsData';
+import Chart from 'chart.js/auto'; // Import Chart.js
 import Users from './Users'
-import ReactGA from 'react-ga';
 
 const Dashboard = () => {
   const [Home, setHome] = useState(true);
@@ -15,9 +16,58 @@ const Dashboard = () => {
   const [Members, setMembers] = useState(false);
   const [Social, setSocial] = useState(false);
   
-  useEffect(() =>{
-    ReactGA.pageview(window.location.pathname)
-  },[]);
+  const clientId = '8517388476-ne2h2stdelva6d6ej8e18qe6csum0u1h.apps.googleusercontent.com';
+  
+  const requestParams = {
+    reportRequests: [
+      {
+        viewId: '294888407', // Replace with your Google Analytics View ID
+        dateRanges: [
+          {
+            startDate: '2023-08-01', // Replace with your desired start date
+            endDate: '2023-08-30',   // Replace with your desired end date
+          },
+        ],
+        metrics: [
+          {
+            expression: 'ga:users',
+          },
+        ],
+      },
+    ],
+  };
+
+  const data = useAnalyticsData(clientId,requestParams);
+  const chartRef = useRef(null);
+  
+
+
+  const chartData = data
+    ? {
+        labels: ['Users'],
+        datasets: [
+          {
+            label: 'Users',
+            data: [parseInt(data.reports[0].data.totals[0].values[0])], // Assuming your data structure
+            backgroundColor: 'rgba(75, 192, 192, 0.2)', // Background color of bars
+            borderColor: 'rgba(75, 192, 192, 1)', // Border color of bars
+            borderWidth: 1, // Border width of bars
+          },
+        ],
+      }
+    : null;
+
+  useEffect(() => {
+    // Create the chart when the component mounts
+    if (chartRef.current && chartData) {
+      new Chart(chartRef.current, {
+        type: 'bar', // Bar chart
+        data: chartData,
+      });
+    }
+  }, [chartData]);
+
+
 
   
   const home = () =>{
@@ -183,7 +233,7 @@ const Dashboard = () => {
             
             <div class="dashboard-horizontal-cards dashboard-card-group-bottom">
               <div class="dashboard-cards dashboard-cards-bottom">
-                <Users/>
+                <canvas ref={chartRef} /> {/* Chart canvas */}
               </div>
               
             </div>

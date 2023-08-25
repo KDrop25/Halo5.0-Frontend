@@ -5,10 +5,7 @@ import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import RequireAuth from './hooks/RequireAuth';
 import PersistLogin from './Pages/Sign-in/PersistLogin';
-import ReactGA from 'react-ga';
-
-
-ReactGA.initialize('UA-283028816-2')
+import GoogleTagManager from './hooks/googletagmanager';
 
 export const ROLES = {
   'User':10,
@@ -20,7 +17,7 @@ const App = () => {
 
   return (
     <>
-    
+    <GoogleTagManager/>
     <Routes>
       <Route path="/" element={<Layout />}>
         
