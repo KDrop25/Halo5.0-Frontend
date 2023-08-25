@@ -5,7 +5,7 @@ import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import RequireAuth from './hooks/RequireAuth';
 import PersistLogin from './Pages/Sign-in/PersistLogin';
-
+import GoogleAnalytics from './hooks/googleanalytics';
 
 export const ROLES = {
   'User':10,
@@ -17,7 +17,8 @@ export const ROLES = {
 const App = () => {
 
   return (
-
+    <>
+    <GoogleAnalytics />
     <Routes>
       <Route path="/" element={<Layout />}>
         
@@ -69,7 +70,7 @@ const App = () => {
       </Route>
     </Routes>
 
-
+  </>
   )
 }
 
