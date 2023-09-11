@@ -1,7 +1,7 @@
 import React from 'react';
 import './Terms.css';
 
-import halologo from '../../assets/Halolegion logo Trans 500by500.png'
+
 
 const terms = () => {
   return (
