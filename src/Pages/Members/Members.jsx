@@ -24,8 +24,8 @@ const Members = () => {
                             <h2 className='members-heading-text'>lorem ipsum</h2>
                             <p>lorem ipsum.lorem ipsum.lorem ipsum.lorem ipsum. lorem ipsum.lorem ipsum.lorem ipsum.lorem ipsum.</p>
                             <div className='members-social-icons'>
-                                    <BsInstagram/>
-                                    <BsFacebook/>
+                                    <a href="https://www.instagram.com/official.kxran/"><BsInstagram/></a>
+                                    <a href=''><BsFacebook/></a>
                                     <BsYoutube/>
                                     <BsTwitter/>
                                     <BsGithub/>
@@ -45,7 +45,7 @@ const Members = () => {
                             <h2 className='members-vertical-info-text'>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsum</h2>
                         </div>
                         <div className='members-social-icons'>
-                                    <BsInstagram/>
+                                    <a href="https://www.instagram.com/official.kxran/"><BsInstagram/></a>
                                     <BsFacebook/>
                                     <BsYoutube/>
                                     <BsTwitter/>
