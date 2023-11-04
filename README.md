@@ -1,4 +1,4 @@
-0Halo 5.0
+Halo 5.0
 Welcome to the Halo 5.0 website repository. Halo 5.0 is a feature-rich web application built using a modern stack of technologies, designed for event registration and information management. Whether you are an event organizer or a participant, Halo 5.0 provides an efficient platform to manage and register for events.
 
 Halo 5.0 Logo
