@@ -55,11 +55,7 @@
     
     
   }
-  .encode-heading-text{
-    font-family: var(--font-family-montserrat);
-    font-weight: 600;
-    text-align: center;
-  }
+  
   .encode-horizontal-card{
     display: flex;
     justify-content: space-between;
@@ -99,6 +95,7 @@
     
 }
 
+
 .encode-ellipse-img {
     position: relative;
     width: 35%;
@@ -124,12 +121,7 @@
 }
 
 
-.encode-encode {
-    font-size: 20px;
-    font-family: var(--font-source-sans-pro);
-    font-weight: 500;
-    color: var(--color-dimgray-200);
-}
+
 .encode-main{
     
     display: flex;
@@ -153,8 +145,23 @@
     text-align: center;
     
 }
+.encode-event-button:disabled {
+  border-radius: 5px;
+  background-color: var(--color-gray-300);
+  width: 190px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--color-white);
+  border: 0px;
+  font-size: medium;
+  font-weight: 600;
+  font-family: var(--font-family-montserrat);
+  border: 0px;
+  text-align: center;
+  
+}
 
-.encode-event-button:hover {
+.encode-event-button:not(:disabled):hover {
     text-shadow: 0px 0px 10px var(--glow-2);
 }
 

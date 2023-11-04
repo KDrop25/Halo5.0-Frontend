@@ -153,13 +153,17 @@
     text-align: center;
     
 }
+.qurious-event-button:disabled {
+  background-color: var(--color-gray-300);
+  
+}
 
-.qurious-event-button:hover {
+.qurious-event-button:not(:disabled):hover {
     text-shadow: 0px 0px 10px var(--glow-2);
 }
 
-.qurious-event-button:active,
-.qurious-event-button:focus {
+.qurious-event-button:not(:disabled):active,
+.qurious-event-button:not(:disabled):focus {
     box-shadow: 2px 2px 6px var(--glow), -2px -2px 6px var(--glow);
     transform: scale(0.97);
     transition: 0.25s;

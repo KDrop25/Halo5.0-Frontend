@@ -25,7 +25,9 @@ const Home = () => {
           </div>
           <div className='encode-horizontal-card-right'>
             <p>Click here to Register</p>
-            <Link to='/reg-encode'><button class="encode-event-button" type='button'>Register</button></Link>
+            
+            <Link to='/reg-encode'><button class="encode-event-button" type='button' disabled="True">Register</button></Link>
+            <p>Registrations Have Not Started Yet</p>
           </div>
         </div>
       </div>
