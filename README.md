@@ -1,4 +1,4 @@
-# Halo5.0Halo 5.0
+0Halo 5.0
 Welcome to the Halo 5.0 website repository. Halo 5.0 is a feature-rich web application built using a modern stack of technologies, designed for event registration and information management. Whether you are an event organizer or a participant, Halo 5.0 provides an efficient platform to manage and register for events.
 
 Halo 5.0 Logo
@@ -48,48 +48,6 @@ Testing and Development:
 React Scripts
 React Icons
 Web Vitals
-Getting Started
-To run this project locally, follow these steps:
-
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/halo-5.0.git
-cd halo-5.0
-Install dependencies:
-
-bash
-Copy code
-cd client
-npm install
-cd ../server
-npm install
-Set up environment variables:
-
-Create a .env file in the server directory for configuring your MongoDB connection and JWT secret.
-
-plaintext
-Copy code
-MONGO_URI=your-mongodb-connection-string
-JWT_SECRET=your-secret-key
-Run the development server:
-
-Start both the server and the client:
-
-Server:
-
-bash
-Copy code
-cd server
-npm start
-Client:
-
-bash
-Copy code
-cd client
-npm start
-Access the website at http://localhost:3000.
 
 Usage
 Event Organizers: Create, update, and manage events through the admin interface. View participant registrations and event details.
