@@ -12,6 +12,7 @@ import {ROLES} from '../../App'
 const Menu = () => (<>
   <Link to="/home"><p className='navbar-home-text'>Home</p></Link>
   <Link to="/about"><p className='navbar-about-text'>About</p></Link>
+  <Link to="/members"><p className='navbar-about-text'>Members</p></Link>
   <Link to="/events"><p className='navbar-events-text'>Events</p></Link>
   <Link to="/gallery"><p className='navbar-contact-text'>Gallery</p></Link>
   <Link to="/contact"><p className='navbar-contact-text'>Contact</p></Link>
